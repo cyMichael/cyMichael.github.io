@@ -1,78 +1,120 @@
-
 ## About Me
 
 <img class="profile-picture" src="self.jpg">
 
-Hi, I'm Xisen Jin. I am a senior(4th) year undergraduate student in Fudan University, China, majored in Computer Science and Technology. 
+Hi, I'm Yi Cui. I am a senior(4th) year undergraduate student in Fudan University, China, majored in Economics. 
 
 <br>
 
 ## Research Interest
 
-My research interests mainly lie on Natural Language Processing. My current research focus is dialogue systems. 
+My research interests mainly lie on Operation Research and Asset Portfolio. My current research focus is mainly on Management Science and Engineering. 
 
-> While dialogue systems are easy to start with, it is almost an ultimate goal of natural language processing. These efforts may push us towards this ultimate goal.
-> - Infusing world facts or domain knowledge into dialogue generation, or in reverse, disentangle structural knowledge from them.
-> - Structual modeling of grammar, discourse relationships and dialogue process in human interactions in unsupervised or semi-supervised fashion.
+> While both of areas are easy to start with, it is quite complicated to further digest and do research . Previous efforts may push us towards ultimate goal.
+> - With the confusing actual problems, how to solve these questions remains unknown.
+> - Structual modeling of problem, complex relationships and simulation processes in the structure of the models.
 >
-> And I am on the way of these explorations and have some publications on these areas. [Publications](#publications)
+> And I am on the way of these explorations and I have reach some achievements. [Xi Yuan 2016](http://www.fdurop.fudan.edu.cn/projDetail.php?gk=6235&sk=7303&st=3) , [Xi Yuan 2018](http://www.fdurop.fudan.edu.cn/projDetail.php?gk=6818&sk=7303&st=1)
 
 ## Education
 
-<b>Fudan University,</b> 2015.9 -
+<b>Fudan University,</b> 2015.9 - 2017.6  <b>Mechanical Engineering</b>
 
-<b>National University of Singapore</b> 2017.8 - 2017.12
+<b>Fudan University,</b> 2017.6 - 2020.6  <b>Economics</b>
+
+<b>University of California, Los Angeles</b> 2017.8 - 2017.12
 
 ## Research & Interns
 
-<b>Natural Language Processing Group</b>, School of Data Science
+---
 
-Research Assistant, From Oct. 2017 to present
+<b>Tengfei Scientific Innovation Group, Xi Yuan Program</b>, School of **Electronic Engineering**
 
-- Advisor: [Dr. Zhongyu Wei](https://wei-zhongyu.github.io/)
+Research Assistant, From Feb. 2016 to Aug. 2018
 
-<b>[Web Information Retrieval / Natural Language Processing Group (WING)](http://wing.comp.nus.edu.sg/)</b>, National University of Singapore
+- Advisor: [Prof. Shuyu Zhang](http://www.it.fudan.edu.cn/data/view/1187), Fudan University
 
-Research Assistant, From Aug. 2017 to Dec. 2017
+<b>[OLED, New Organic Semiconductors, Perovskite Quantum Dots, Photonic Crystals, Visible Light Communication, etc.](http://www.it.fudan.edu.cn/En/Data/View/1961)</b> 
 
-- Advisor: Wenqiang Lei, [Dr. Min-Yen Kan](http://www.comp.nus.edu.sg/~kanmy/)
+[Project Approval](http://www.fdcollege.fudan.edu.cn/tfcollege/98/f8/c7550a104696/page.htm)
 
-<b>[Data Science Lab, JD.com](http://datascience.jd.com)</b>, Beijing, China
+[Medium Oral Defense](https://mp.weixin.qq.com/s/K2EBv3vt8iOUlw4TRHK4Rg)
 
-Research Assistant, From Dec. 2017 to Feb. 2018
-- Advisor: [Dr. Zhaochun Ren](https://sites.google.com/site/zren87/), [Dr. Dawei Yin](http://www.yindawei.com/)
+[Project Result](https://mp.weixin.qq.com/s/aCEUwctWMN2SiWNSwq9tDQ)
 
-<b>[Mircosoft Research Asia](https://www.microsoft.com/en-us/research/)</b>, Beijing, China
+[Outstanding Tengfei Award](http://www.fdcollege.fudan.edu.cn/_upload/article/files/37/cb/ff787aee4a29afd56aeefb8ccce2/59594abd-692e-4383-ae25-858c6ff87fbb.pdf)
 
-Research Assistant, Natural Language Computing group. From Jul. 2018 to Oct. 2018
+Research Assistant, From Apr. 2018 to Present
 
+- Advisor:  [Prof. Xiao Wei](http://www.econ.fudan.edu.cn/teacherdetail.php?tid=209), Fudan University, Coordinator: Jingyan Zhang
+
+<b>[In the past years, Xiao Wei has devoted himself to the study of microeconomic theory. His research topics include undecided equity theory, preference change theory, and utility function theory in uncertain environments.](http://www.econ.fudan.edu.cn/teacherdetail.php?tid=209)</b>
+
+Research Assistant, From Jul. 2017 to Present
+- Advisor: [Prof. Wotao Yin](http://www.math.ucla.edu/~wotaoyin/), [Dr. Fei Feng](http://www.math.ucla.edu/~fei.feng/)
+
+<b>[UCLA Math](https://www.math.ucla.edu)</b>, Los Angeles, United States
+
+<b>[Wotao Yin is an applied mathematician and professor in the Mathematics department at the University of California, Los Angeles in Los Angeles, California. He currently conducts research in optimization, parallel and distributed computing, and inverse problems.](https://en.wikipedia.org/wiki/Wotao_Yin)</b>
 
 ## Publications
 
-1. **Xisen Jin**, Wenqiang Lei, Zhaochun Ren, Hongshen Chen, Shangsong Liang, Yihong Eric Zhao and Dawei Yin, Explicit State Tracking with Semi-Supervision for Neural Dialogue Generation, CIKM 2018, Full paper.
-2. Wenqiang Lei, **Xisen Jin**, Min-Yen Kan, Zhaochun Ren, Xiangnan He and Dawei Yin, Sequicity: Simplifying Task-oriented Dialogue Systems with Single Sequence-to-Sequence Architectures, ACL 2018, Full paper. [code](https://github.com/WING-NUS/sequicity)
+1. Incoming
+
+## Patent
+
+1. In processing
 
 ## Projects
-- Wheels: 
-    - [Batched-Attention GRU in PyTorch](https://github.com/AuCson/PyTorch-Batch-Attention-Seq2seq)
+- GitHub Eye: 
+
+    - [GitHub Eye, Hack × FDU 2016](https://github.com/cyMichael/GithubEye)
+
+- Flipped
+
+    - [Flipped, Hack × STJ 2017](https://github.com/cyMichael/Flipped-1)
 
 - Softwares: 
     - [GRE-Verbal-Prep-3000](https://github.com/AuCson/GRE-3000-Memory-Helper)
     - [Arxiv Digest](https://aucson.github.io/arxiv_digest.html)
-    
+
     Simple(less than 3 hours' work) but useful(at least to myself).
 
+- National Mathematical Model Contest 2017:
+
+    - [Codes for Contest](https://github.com/cyMichael/Mathematical-Modeling-of-2017)
+
+- MCM/ICM 2018:
+
+    - [Paper](https://www.linkedin.com/in/yi-cui-259896137/detail/treasury/summary/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAACFpkuUB2pRO6399Y2O6ekUZAres6DxCFF8%2C1515914974991)&section=summary&treasuryCount=2)
+
 - Codes for Papers:
-    - Sequicity: [code](https://github.com/WING-NUS/sequicity)
+
+    - Incoming
 
 - Blogs:
-    - [Machine Learning](https://aucson.github.io/ml-techblog/)
-    - [Leetcode Personal Solution](https://aucson.gitbooks.io/leetcode-rec/content/)
+  - Incoming
+
+- UCLA MAE 270A Project(PhD level):
+  - [Project paper](https://www.linkedin.com/in/yi-cui-259896137/detail/treasury/summary/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAACFpkuUB2pRO6399Y2O6ekUZAres6DxCFF8%2C1515914974991)&section=summary&treasuryCount=2)
+
+
+
+## Honors
+
+- [National Mathematics Model Contest, Second Prize, 2016](http://www.fdcollege.fudan.edu.cn/b5/9e/c9395a112030/page.htm)
+- [National Mathematics Model Contest, Third Prize, 2017](http://www.jwc.fudan.edu.cn/13/20/c9395a135968/page.htm)
+- MCM/ICM Honor Prize, 2018
+- [Xi Yuan Program: Outstanding](http://www.fdurop.fudan.edu.cn/projDetail.php?gk=6235&sk=7303&st=3)
+- [Assistant counselor, Fudan University, 2017](http://www.stuaff.fudan.edu.cn/cf/b6/c10070a118710/page.htm)
+- [Tengfei Award, Num. 1st](http://www.fdcollege.fudan.edu.cn/_upload/article/files/37/cb/ff787aee4a29afd56aeefb8ccce2/59594abd-692e-4383-ae25-858c6ff87fbb.pdf)
+
+
 
 ## Abilities
+
 - Proficient: Python, PyTorch
-- Skilled: C++, Tensorflow, Web/Android Development
+- Skilled: MATLAB, C++, Tensorflow, Web/Android Development
 - Independent research ability
 - English
-- Korean :p Cuz I'm *ethnically* Korean: Kim Hee Sum(김희삼) is my korean name. 
-<br>
+  <br>
