@@ -67,29 +67,17 @@ Research Assistant, From Jul. 2017 to Present
 
 ## Projects
 - GitHub Eye: 
-
     - [GitHub Eye, Hack × FDU 2016](https://github.com/cyMichael/GithubEye)
-
 - Flipped
-
     - [Flipped, Hack × STJ 2017](https://github.com/cyMichael/Flipped-1)
-
 - Softwares: 
-    - [GRE-Verbal-Prep-3000](https://github.com/AuCson/GRE-3000-Memory-Helper)
-    - [Arxiv Digest](https://aucson.github.io/arxiv_digest.html)
-
-    Simple(less than 3 hours' work) but useful(at least to myself).
+    - Incoming
 
 - National Mathematical Model Contest 2017:
-
     - [Codes for Contest](https://github.com/cyMichael/Mathematical-Modeling-of-2017)
-
 - MCM/ICM 2018:
-
     - [Paper](https://www.linkedin.com/in/yi-cui-259896137/detail/treasury/summary/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAACFpkuUB2pRO6399Y2O6ekUZAres6DxCFF8%2C1515914974991)&section=summary&treasuryCount=2)
-
 - Codes for Papers:
-
     - Incoming
 
 - Blogs:
@@ -107,7 +95,7 @@ Research Assistant, From Jul. 2017 to Present
 - MCM/ICM Honor Prize, 2018
 - [Xi Yuan Program: Outstanding](http://www.fdurop.fudan.edu.cn/projDetail.php?gk=6235&sk=7303&st=3)
 - [Assistant counselor, Fudan University, 2017](http://www.stuaff.fudan.edu.cn/cf/b6/c10070a118710/page.htm)
-- [Tengfei Award, Num. 1st](http://www.fdcollege.fudan.edu.cn/_upload/article/files/37/cb/ff787aee4a29afd56aeefb8ccce2/59594abd-692e-4383-ae25-858c6ff87fbb.pdf)
+- [Tengfei Award, No. 1st](http://www.fdcollege.fudan.edu.cn/_upload/article/files/37/cb/ff787aee4a29afd56aeefb8ccce2/59594abd-692e-4383-ae25-858c6ff87fbb.pdf)
 
 
 
