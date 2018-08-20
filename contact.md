@@ -3,5 +3,6 @@ layout: default
 is_contact: true
 ---
 
-* Email: xisenjin@gmail.com
+* Email: cuiy15@fudan.edu.cn
+* Email: cy.2017@foxmail.com
 
