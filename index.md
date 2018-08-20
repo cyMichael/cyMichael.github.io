@@ -76,7 +76,7 @@ Research Assistant, From Jul. 2017 to Present
 - National Mathematical Model Contest 2017:
     - [Codes for Contest](https://github.com/cyMichael/Mathematical-Modeling-of-2017)
 - MCM/ICM 2018:
-    - [Paper](https://www.linkedin.com/in/yi-cui-259896137/detail/treasury/summary/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAACFpkuUB2pRO6399Y2O6ekUZAres6DxCFF8%2C1515914974991)&section=summary&treasuryCount=2)
+    - [Paper](https://www.linkedin.com/in/yi-cui-259896137/detail/treasury/summary/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAACFpkuUB2pRO6399Y2O6ekUZAres6DxCFF8%2C1518523678896)&section=summary&treasuryCount=2)
 - Codes for Papers:
     - Incoming
 
