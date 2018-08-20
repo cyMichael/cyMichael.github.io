@@ -1,1 +1,10 @@
-theme: jekyll-theme-tactile
+title: Yi Cui
+url: "https://cyMichael.github.io"
+
+markdown: kramdown
+
+tracking_id: #
+
+sass:
+    style: compressed
+    sass_dir: _sass
