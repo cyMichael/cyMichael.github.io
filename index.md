@@ -88,15 +88,15 @@ Research Assistant, From Jul. 2017 to Present
 
 ## Paper for Mathematical Contest
 
-1. [2017_MCM](https://github.com/cyMichael/cyMichael.github.io/blob/master/%E7%BE%8E%E8%B5%9B2017%E5%B4%94%E6%87%BF_%E5%BC%A0%E7%BF%BC%E8%85%BE_%E9%A9%AC%E9%B9%8F%E9%A3%9E.pdf)
+1. [2017_MCM](https://github.com/cyMichael)
 
-2. [2018_MCM](https://github.com/cyMichael/cyMichael.github.io/blob/master/87843_2018%E7%BE%8E%E5%9B%BD%E5%BB%BA%E6%A8%A1%E5%A4%A7%E8%B5%9B.pdf)
+2. [2018_MCM](https://github.com/cyMichael)
 
 3. [2016_National_Contest]()
 
-4. [2017_National_Contest](https://github.com/cyMichael/cyMichael.github.io/blob/master/A201709001057_%E5%B4%94%E6%87%BF_%E5%BC%A0%E7%BF%BC%E8%85%BE_%E7%A8%8B%E6%A5%A0.pdf)
+4. [2017_National_Contest](https://github.com/cyMichael)
 
-5. [2018_National_Contest](https://github.com/cyMichael/cyMichael.github.io/blob/master/A201809001088%E7%8E%8B%E5%AF%85%E5%8D%87_%E5%B4%94%E6%87%BF_%E6%9D%A8%E5%AE%87%E9%94%8B.pdf)
+5. [2018_National_Contest](https://github.com/cyMichael)
 
 
 
