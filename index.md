@@ -86,6 +86,18 @@ Research Assistant, From Jul. 2017 to Present
 - UCLA MAE 271A Project(PhD level):
   - [Project paper(95/100) Top 3](https://www.linkedin.com/in/yi-cui-259896137/detail/treasury/summary/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAACFpkuUB2pRO6399Y2O6ekUZAres6DxCFF8%2C1515914974991)&section=summary&treasuryCount=2)
 
+## Paper for Mathematical Contest
+
+1. [2017_MCM]()
+
+2. [2018_MCM]()
+
+3. [2016_National_Contest]()
+
+4. [2017_National_Contest]()
+
+5. [2018_National_Contest]()
+
 
 
 ## Honors
@@ -93,6 +105,7 @@ Research Assistant, From Jul. 2017 to Present
 - [National Mathematics Model Contest, Second Prize, 2016](http://www.fdcollege.fudan.edu.cn/b5/9e/c9395a112030/page.htm)
 - [National Mathematics Model Contest, Third Prize, 2017](http://www.jwc.fudan.edu.cn/13/20/c9395a135968/page.htm)
 - MCM/ICM Honor Prize, 2018
+- MCM/ICM Third Prize, 2018
 - [Xi Yuan Program: Outstanding](http://www.fdurop.fudan.edu.cn/projDetail.php?gk=6235&sk=7303&st=3)
 - [Assistant counselor, Fudan University, 2017](http://www.stuaff.fudan.edu.cn/cf/b6/c10070a118710/page.htm)
 - [Tengfei Award, No. 1st](http://www.fdcollege.fudan.edu.cn/_upload/article/files/37/cb/ff787aee4a29afd56aeefb8ccce2/59594abd-692e-4383-ae25-858c6ff87fbb.pdf)
