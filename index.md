@@ -84,7 +84,7 @@ Research Assistant, From Jul. 2017 to Present
   - [Project paper(95/100) Top 3](https://www.linkedin.com/in/yi-cui-259896137/detail/treasury/summary/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAACFpkuUB2pRO6399Y2O6ekUZAres6DxCFF8%2C1515914974991)&section=summary&treasuryCount=2)
 
 - Project(Fudan University,2018 Fall)
-  - [Thesis Proposal]()
+  - [Thesis Proposal]((http://cyMichael.github.io/Thesis_Proposal.pdf))
 
 ## Paper for Mathematical Contest
 
