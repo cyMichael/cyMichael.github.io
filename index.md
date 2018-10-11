@@ -84,19 +84,19 @@ Research Assistant, From Jul. 2017 to Present
   - [Project paper(95/100) Top 3](https://www.linkedin.com/in/yi-cui-259896137/detail/treasury/summary/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAACFpkuUB2pRO6399Y2O6ekUZAres6DxCFF8%2C1515914974991)&section=summary&treasuryCount=2)
 
 - Project(Fudan University,2018 Fall)
-  - [Thesis Proposal](https://cyMichael.github.io/Thesis_Proposal.pdf)
+  - [Thesis Proposal](https://cyMichael.github.io/resources/Thesis_Proposal.pdf)
 
 ## Paper for Mathematical Contest
 
-1. [2017_MCM](https://github.com/cyMichael)
+1. [2017_MCM](https://cymichael.github.io/resources/美赛2017崔懿_张翼腾_马鹏飞.pdf)
 
-2. [2018_MCM](https://github.com/cyMichael)
+2. [2018_MCM](https://cymichael.github.io/resources/87843_2018美国建模大赛.pdf)
 
 3. [2016_National_Contest]()
 
-4. [2017_National_Contest](https://github.com/cyMichael)
+4. [2017_National_Contest](https://cymichael.github.io/resources/A201709001057_崔懿_张翼腾_程楠.pdf)
 
-5. [2018_National_Contest](https://github.com/cyMichael)
+5. [2018_National_Contest](https://cymichael.github.io/resources/A201809001088王寅升_崔懿_杨宇锋.pdf)
 
 
 
