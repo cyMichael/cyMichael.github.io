@@ -2,7 +2,7 @@
 
 <img class="profile-picture" src="self.jpg">
 
-Hi, I'm Yi Cui. I am a senior(4th) year undergraduate student in Fudan University, China, majored in Economics. 
+Hi, I'm Yi Cui. I am a junior(3th) year undergraduate student in Fudan University, China, majored in Economics. 
 
 <br>
 
@@ -22,7 +22,19 @@ My research interests mainly lie on Operation Research and Asset Portfolio. My c
 
 <b>Fudan University,</b> 2017.6 - 2020.6  <b>Economics</b>
 
-<b>University of California, Los Angeles</b> 2017.8 - 2017.12
+<b>Fudan University,</b> 2017.6 - 2020.6  <b>Data Science</b>(Minor)
+
+<b>University of California, Los Angeles</b>, 2017.8 - 2017.12
+
+## Patent
+
+1. National Patent-S, First Inventor, ***Yi Cui***, 2018
+
+   Application Number/Patent Number: 201821803958.4
+
+2. National Patent-F, First Inventor, ***Yi Cui***, 2018
+
+   Application Number/Patent Number: 201811304193.4
 
 ## Research & Interns
 
@@ -61,9 +73,7 @@ Research Assistant, From Jul. 2017 to Present
 
 1. Incoming
 
-## Patent
 
-1. In processing
 
 ## Projects
 - GitHub Eye: 
@@ -81,22 +91,22 @@ Research Assistant, From Jul. 2017 to Present
 - Blogs:
   - Incoming
 - UCLA MAE 271A Project(PhD level):
-  - [Project paper(95/100) Top 3](https://www.linkedin.com/in/yi-cui-259896137/detail/treasury/summary/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAACFpkuUB2pRO6399Y2O6ekUZAres6DxCFF8%2C1515914974991)&section=summary&treasuryCount=2)
+  - [Project paper(95/100) Top 3](https://cymichael.github.io/resources/Final_Project_UCLA_MAE271A.pdf)
 
 - Project(Fudan University,2018 Fall)
   - [Thesis Proposal](https://cyMichael.github.io/resources/Thesis_Proposal.pdf)
 
 ## Paper for Mathematical Contest
 
-1. [2017_MCM](https://cymichael.github.io/resources/美赛2017崔懿_张翼腾_马鹏飞.pdf)
+1. [2017_MCM](https://cymichael.github.io/resources/55238_2017MCM_YiCui.pdf)
 
-2. [2018_MCM](https://cymichael.github.io/resources/87843_2018美国建模大赛.pdf)
+2. [2018_MCM](https://cymichael.github.io/resources/87843_2018MCM_YiCui.pdf)
 
 3. [2016_National_Contest]()
 
-4. [2017_National_Contest](https://cymichael.github.io/resources/A201709001057_崔懿_张翼腾_程楠.pdf)
+4. [2017_National_Contest](https://cymichael.github.io/resources/A201709001057_National_YiCui_2017.pdf)
 
-5. [2018_National_Contest](https://cymichael.github.io/resources/A201809001088王寅升_崔懿_杨宇锋.pdf)
+5. [2018_National_Contest](https://cymichael.github.io/resources/A201809001088_National_YiCui_2018.pdf)
 
 
 
@@ -104,8 +114,8 @@ Research Assistant, From Jul. 2017 to Present
 
 - [National Mathematics Model Contest, Second Prize, 2016](http://www.fdcollege.fudan.edu.cn/b5/9e/c9395a112030/page.htm)
 - [National Mathematics Model Contest, Third Prize, 2017](http://www.jwc.fudan.edu.cn/13/20/c9395a135968/page.htm)
-- MCM/ICM Honor Prize, 2018
-- MCM/ICM Third Prize, 2018
+- [MCM/ICM Honor Prize, 2018](https://cymichael.github.io/resources/A201809001088_National_YiCui_2018.pdf)
+- [MCM/ICM Third Prize, 2017](55238_2017MCM.pdf)
 - [Xi Yuan Program: Outstanding](http://www.fdurop.fudan.edu.cn/projDetail.php?gk=6235&sk=7303&st=3)
 - [Assistant counselor, Fudan University, 2017](http://www.stuaff.fudan.edu.cn/cf/b6/c10070a118710/page.htm)
 - [Tengfei Award, No. 1st](http://www.fdcollege.fudan.edu.cn/_upload/article/files/37/cb/ff787aee4a29afd56aeefb8ccce2/59594abd-692e-4383-ae25-858c6ff87fbb.pdf)
