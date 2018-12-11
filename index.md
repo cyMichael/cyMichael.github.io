@@ -2,7 +2,7 @@
 
 <img class="profile-picture" src="self.jpg">
 
-Hi, I'm Yi Cui. I am a junior(3th) year undergraduate student in Fudan University, China, majored in Economics. 
+Hi, I'm Yi Cui. I am a junior(3rd) year undergraduate student in Fudan University, China, majored in Economics. 
 
 <br>
 
