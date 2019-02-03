@@ -1,6 +1,6 @@
 ## About Me
 
-<img class="profile-picture" src="self.jpg">
+<img class="profile-picture" src="self1.jpg">
 
 Hi, I'm Yi Cui. I am a junior(3rd) year undergraduate student in Fudan University, China, majored in Economics. 
 
@@ -8,7 +8,7 @@ Hi, I'm Yi Cui. I am a junior(3rd) year undergraduate student in Fudan Universit
 
 ## Research Interest
 
-My research interests mainly lie on Operation Research and Asset Portfolio. My current research focus is mainly on Management Science and Engineering. 
+My research interests mainly lie on Economics Research combined with Data Science. My current research focus is mainly on Asset Portfolio and Microeconomic Theory. 
 
 > While both of areas are easy to start with, it is quite complicated to further digest and do research . Previous efforts may push us towards ultimate goal.
 > - With the confusing actual problems, how to solve these questions remains unknown.
@@ -22,7 +22,7 @@ My research interests mainly lie on Operation Research and Asset Portfolio. My c
 
 <b>Fudan University,</b> 2017.6 - 2020.6  <b>Economics</b>
 
-<b>Fudan University,</b> 2017.6 - 2020.6  <b>Data Science</b>(Minor)
+<b>Fudan University,</b> 2017.6 - 2020.6  <b>Data Science</b> (Minor)
 
 <b>University of California, Los Angeles</b>, 2017.8 - 2017.12
 
@@ -46,7 +46,7 @@ Research Assistant, From Feb. 2016 to Aug. 2018
 
 - Advisor: [Prof. Shuyu Zhang](http://www.it.fudan.edu.cn/data/view/1187), Fudan University
 
-<b>[OLED, New Organic Semiconductors, Perovskite Quantum Dots, Photonic Crystals, Visible Light Communication, etc.](http://www.it.fudan.edu.cn/En/Data/View/1961)</b> 
+OLED, New Organic Semiconductors, Perovskite Quantum Dots, Photonic Crystals, Visible Light Communication, <b>[etc.](http://www.it.fudan.edu.cn/En/Data/View/1961)</b> 
 
 [Project Approval](http://www.fdcollege.fudan.edu.cn/tfcollege/98/f8/c7550a104696/page.htm)
 
@@ -60,14 +60,14 @@ Research Assistant, From Apr. 2018 to Present
 
 - Advisor:  [Prof. Xiao Wei](http://www.econ.fudan.edu.cn/teacherdetail.php?tid=209), Fudan University, Coordinator: Jingyan Zhang
 
-<b>[In the past years, Xiao Wei has devoted himself to the study of microeconomic theory. His research topics include undecided equity theory, preference change theory, and utility function theory in uncertain environments.](http://www.econ.fudan.edu.cn/teacherdetail.php?tid=209)</b>
+The study of microeconomic theory. His research topics include undecided equity theory, preference change theory, and utility function theory in uncertain environments, <b>[etc.](http://www.econ.fudan.edu.cn/teacherdetail.php?tid=209)</b>
 
-Research Assistant, From Jul. 2017 to Present
+Research Assistant, From Jul. 2017 to Jul. 2018
 - Advisor: [Prof. Wotao Yin](http://www.math.ucla.edu/~wotaoyin/), [Dr. Fei Feng](http://www.math.ucla.edu/~fei.feng/)
 
 <b>[UCLA Math](https://www.math.ucla.edu)</b>, Los Angeles, United States
 
-<b>[Wotao Yin is an applied mathematician and professor in the Mathematics department at the University of California, Los Angeles in Los Angeles, California. He currently conducts research in optimization, parallel and distributed computing, and inverse problems.](https://en.wikipedia.org/wiki/Wotao_Yin)</b>
+An applied mathematician and professor in the Mathematics department at the University of California, Los Angeles in Los Angeles, California. He currently conducts research in optimization, parallel and distributed computing, and inverse problems, <b>[etc.](https://en.wikipedia.org/wiki/Wotao_Yin)</b>
 
 ## Publications
 
@@ -85,15 +85,15 @@ Research Assistant, From Jul. 2017 to Present
 - National Mathematical Model Contest 2017:
     - [Codes for Contest](https://github.com/cyMichael/Mathematical-Modeling-of-2017)
 - MCM/ICM 2018:
-    - [Paper](https://www.linkedin.com/in/yi-cui-259896137/detail/treasury/summary/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAACFpkuUB2pRO6399Y2O6ekUZAres6DxCFF8%2C1518523678896)&section=summary&treasuryCount=2)
+    - [Paper](https://cymichael.github.io/resources/87843_2018MCM_YiCui.pdf)
 - Codes for Papers:
     - Incoming
 - Blogs:
   - Incoming
 - UCLA MAE 271A Project(PhD level):
-  - [Project paper(95/100) Top 3](https://cymichael.github.io/resources/Final_Project_UCLA_MAE271A.pdf)
+  - [Project Paper(95/100) Top 3%](https://cymichael.github.io/resources/Final_Project_UCLA_MAE271A.pdf)
 
-- Project(Fudan University,2018 Fall)
+- Project(Fudan University, 2018 Fall)
   - [Thesis Proposal](https://cyMichael.github.io/resources/Thesis_Proposal.pdf)
 
 ## Paper for Mathematical Contest
@@ -117,15 +117,19 @@ Research Assistant, From Jul. 2017 to Present
 - [MCM/ICM Honor Prize, 2018](https://cymichael.github.io/resources/A201809001088_National_YiCui_2018.pdf)
 - [MCM/ICM Third Prize, 2017](55238_2017MCM.pdf)
 - [Xi Yuan Program: Outstanding](http://www.fdurop.fudan.edu.cn/projDetail.php?gk=6235&sk=7303&st=3)
-- [Assistant counselor, Fudan University, 2017](http://www.stuaff.fudan.edu.cn/cf/b6/c10070a118710/page.htm)
+- [Assistant Counselor, Fudan University, 2017](http://www.stuaff.fudan.edu.cn/cf/b6/c10070a118710/page.htm)
 - [Tengfei Award, No. 1st](http://www.fdcollege.fudan.edu.cn/_upload/article/files/37/cb/ff787aee4a29afd56aeefb8ccce2/59594abd-692e-4383-ae25-858c6ff87fbb.pdf)
 
 
 
+## Advice
+
+- [Linear Algebra](https://www.cnblogs.com/torsor/p/10292081.html)
+
 ## Abilities
 
 - Proficient: Python, PyTorch
-- Skilled: MATLAB, C++, Tensorflow, Web/Android Development
+- Skilled: MATLAB, STATA, C++, Tensorflow, Web/Android Development
 - Independent research ability
 - English
   <br>
