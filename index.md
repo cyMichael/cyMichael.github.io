@@ -65,7 +65,7 @@ The study of microeconomic theory. His research topics include undecided equity 
 Research Assistant, From Jul. 2017 to Jul. 2018
 - Advisor: [Prof. Wotao Yin](http://www.math.ucla.edu/~wotaoyin/), [Dr. Fei Feng](http://www.math.ucla.edu/~fei.feng/)
 
-<b>[UCLA Math](https://www.math.ucla.edu)</b>, Los Angeles, United States
+<b>[UCLA Math](https://www.math.ucla.edu)</b>, Los Angeles, United States  [Presentation Sildes 2017](https://cymichael.github.io/resources/Reinforcement_learning.pdf)
 
 An applied mathematician and professor in the Mathematics department at the University of California, Los Angeles in Los Angeles, California. He currently conducts research in optimization, parallel and distributed computing, and inverse problems, <b>[etc.](https://en.wikipedia.org/wiki/Wotao_Yin)</b>
 
