@@ -124,7 +124,7 @@ An applied mathematician and professor in the Mathematics department at the Univ
 
 ## Advice
 
-- [Linear Algebra](https://www.cnblogs.com/torsor/p/10292081.html)
+- [Linear Algebra, Fudan Math Department](https://www.cnblogs.com/torsor/p/10292081.html)
 
 ## Abilities
 

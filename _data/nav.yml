@@ -1,5 +1,5 @@
 - name: "Contact"
   link: "contact"
 
-- name: "Research Blog"
-  link: 'researchblog/'
+- name: "CV"
+  link: 'https://cymichael.github.io/resources/CV.pdf'
