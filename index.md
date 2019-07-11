@@ -2,15 +2,15 @@
 
 <img class="profile-picture" src="self1.jpg">
 
-Hi, I'm Yi Cui. I am a junior(3rd) year undergraduate student in Fudan University, China, majored in Economics. 
+Hi, I'm Yi Cui. I am a senior(4th) year undergraduate student in Fudan University, China, majored in Economics. 
 
 <br>
 
 ## Research Interest
 
-My research interests mainly lie on Economics Research combined with Data Science. My current research focus is mainly on Asset Portfolio and Microeconomic Theory. 
+My research interests mainly lie on Economics Research combined with Data Science. My current research focus is mainly on Mechanism Design, Asset Portfolio and Microeconomic Theory. 
 
-> While both of areas are easy to start with, it is quite complicated to further digest and do research . Previous efforts may push us towards ultimate goal.
+> While all of these areas are easy to start with, it is quite complicated to further digest and do research. Previous efforts may push us towards ultimate goal.
 > - With the confusing actual problems, how to solve these questions remains unknown.
 > - Structual modeling of problem, complex relationships and simulation processes in the structure of the models.
 >
@@ -108,7 +108,7 @@ An applied mathematician and professor in the Mathematics department at the Univ
 
 5. [2018_National_Contest](https://cymichael.github.io/resources/A201809001088_National_YiCui_2018.pdf)
 
-
+*. [Problem Sets of National Contest(2016-2018)](https://cymichael.github.io/resources/National Mathematical Contest Problems(2016-2018).pdf)
 
 ## Honors
 
