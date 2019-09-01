@@ -40,13 +40,21 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
 ---
 
+[Junior Research Assistant](https://aims.cuhk.edu.hk/converis/portal/Person/97321951?auxfun=&lang=zh_HK), From Jul. 2019 to Sep. 2019
+
+- Advisor: [Prof. Jimmy Chan](https://jimmyhingchan.weebly.com/), The Chinese University of Hong Kong
+
+Mechanism design, microeconomic theory, game theory and concrete simulations.
+
+
+
 <b>Tengfei Scientific Innovation Group, Xi Yuan Program</b>, School of **Electronic Engineering**
 
 Research Assistant, From Feb. 2016 to Aug. 2018
 
 - Advisor: [Prof. Shuyu Zhang](http://www.it.fudan.edu.cn/data/view/1187), Fudan University
 
-OLED, New Organic Semiconductors, Perovskite Quantum Dots, Photonic Crystals, Visible Light Communication, <b>[etc.](http://www.it.fudan.edu.cn/En/Data/View/1961)</b> 
+OLED, new organic semiconductors, perovskite quantum dots, photonic crystals, visible light communication, <b>[etc.](http://www.it.fudan.edu.cn/En/Data/View/1961)</b> 
 
 [Project Approval](http://www.fdcollege.fudan.edu.cn/tfcollege/98/f8/c7550a104696/page.htm)
 
@@ -56,18 +64,22 @@ OLED, New Organic Semiconductors, Perovskite Quantum Dots, Photonic Crystals, Vi
 
 [Outstanding Tengfei Award](http://www.fdcollege.fudan.edu.cn/_upload/article/files/37/cb/ff787aee4a29afd56aeefb8ccce2/59594abd-692e-4383-ae25-858c6ff87fbb.pdf)
 
+
+
 Research Assistant, From Apr. 2018 to Present
 
 - Advisor:  [Prof. Xiao Wei](http://www.econ.fudan.edu.cn/teacherdetail.php?tid=209), Fudan University, Coordinator: Jingyan Zhang
 
 The study of microeconomic theory. His research topics include undecided equity theory, preference change theory, and utility function theory in uncertain environments, <b>[etc.](http://www.econ.fudan.edu.cn/teacherdetail.php?tid=209)</b>
 
+
+
 Research Assistant, From Jul. 2017 to Jul. 2018
 - Advisor: [Prof. Wotao Yin](http://www.math.ucla.edu/~wotaoyin/), [Dr. Fei Feng](http://www.math.ucla.edu/~fei.feng/)
 
 <b>[UCLA Math](https://www.math.ucla.edu)</b>, Los Angeles, United States  [Presentation Sildes 2017](https://cymichael.github.io/resources/Reinforcement_learning.pdf)
 
-An applied mathematician and professor in the Mathematics department at the University of California, Los Angeles in Los Angeles, California. He currently conducts research in optimization, parallel and distributed computing, and inverse problems, <b>[etc.](https://en.wikipedia.org/wiki/Wotao_Yin)</b>
+Reinforcement learning, value iteration, optimization.
 
 ## Publications
 
