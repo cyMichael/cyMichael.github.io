@@ -42,20 +42,18 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
    - [Prof. Yu Liu](https://sites.google.com/site/yuliu2014/home), School of Economics, Fudan University
    - [Syllabus](https://cymichael.github.io/resources/Principles of microeconomics syllabus 2019.pdf), 2019.09 - 2020.01
-   - <u>***Undergraduate Level***</u>
+   - <u>Undergraduate Level</u>
 
     See more resources on the e-learning system (**Canvas**).
 
 2. Econometrics (EMAE620009.01)
    - [Prof. Huailu Li](https://huailuli.weebly.com/)
    - [Syllabus](https://econ.fudan.edu.cn/ema/Welcome/Current_Students/Course_Schedules.htm), 2019.09 - 2019.12
-   - <u>***Graduate Level***</u>
+   - <u>Graduate Level</u>
 
 ​      See more resources on the e-learning system (**Canvas**).
 
 ## Research & Interns
-
----
 
 1. [Junior Research Assistant](https://aims.cuhk.edu.hk/converis/portal/Person/97321951?auxfun=&lang=zh_HK), From Jul. 2019 to Sep. 2019
 
