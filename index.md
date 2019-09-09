@@ -41,14 +41,14 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 1. Principle of microeconomics (SOSC120020.01)
 
    - [Prof. Yu Liu](https://sites.google.com/site/yuliu2014/home), School of Economics, Fudan University
-   - [Syllabus](https://cymichael.github.io/resources/Principles of microeconomics syllabus 2019.pdf), 2019.09 - 2020.01
+   - [Syllabus](https://cymichael.github.io/resources/Principles of microeconomics syllabus 2019.pdf), From Sep. 2019 to Jan. 2020
    - <u>Undergraduate Level</u>
 
     See more resources on the e-learning system (**Canvas**).
 
 2. Econometrics (EMAE620009.01)
-   - [Prof. Huailu Li](https://huailuli.weebly.com/)
-   - [Syllabus](https://econ.fudan.edu.cn/ema/Welcome/Current_Students/Course_Schedules.htm), 2019.09 - 2019.12
+   - [Prof. Huailu Li](https://huailuli.weebly.com/), School of Economics, Fudan University
+   - [Syllabus](https://econ.fudan.edu.cn/ema/Welcome/Current_Students/Course_Schedules.htm), From Sep. 2019 to Dec. 2019
    - <u>Graduate Level</u>
 
 ​      See more resources on the e-learning system (**Canvas**).
@@ -57,51 +57,37 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
 1. [Junior Research Assistant](https://aims.cuhk.edu.hk/converis/portal/Person/97321951?auxfun=&lang=zh_HK), From Jul. 2019 to Sep. 2019
 
-- Advisor: [Prof. Jimmy Chan](https://jimmyhingchan.weebly.com/), School of Economics, The Chinese University of Hong Kong
+   - Advisor: [Prof. Jimmy Chan](https://jimmyhingchan.weebly.com/), School of Economics, The Chinese University of Hong Kong
 
-Mechanism design, microeconomic theory, game theory and concrete simulations using MATLAB.
-
-
+     Mechanism design, microeconomic theory, game theory and concrete simulations using MATLAB.
 
 2. Research Assistant, From Apr. 2018 to Present [*Xi yuan Program*]
 
-- Advisor:  [Prof. Xiao Wei](http://www.econ.fudan.edu.cn/teacherdetail.php?tid=209), School of Economics, Fudan University, Coordinator: Jingyan Zhang
+   - Advisor:  [Prof. Xiao Wei](http://www.econ.fudan.edu.cn/teacherdetail.php?tid=209), School of Economics, Fudan University, Coordinator: Jingyan Zhang
 
-The study of microeconomic theory. His research topics include undecided equity theory, preference change theory, and utility function theory in uncertain environments, <b>[etc.](http://www.econ.fudan.edu.cn/teacherdetail.php?tid=209)</b> Our project is mainly based on the asset portfolio. Meanwhile, besides utilizing the expected utility function to calculate the agent's gains, we use Kreps-Porteus model to test our hypotheses.
-
-
-
-
+     The study of microeconomic theory. His research topics include undecided equity theory, preference change theory, and utility function theory in uncertain environments, <b>[etc.](http://www.econ.fudan.edu.cn/teacherdetail.php?tid=209)</b> Our project is mainly based on the asset portfolio. Meanwhile, besides utilizing the expected utility function to calculate the agent's gains, we use Kreps-Porteus model to test our hypotheses.
 
 3. Research Assistant, From Jul. 2017 to Dec. 2017
 
-- Advisor: [Prof. Wotao Yin](http://www.math.ucla.edu/~wotaoyin/), [Dr. Fei Feng](http://www.math.ucla.edu/~fei.feng/), School of Mathematics, University of California, Los Angeles
+   - Advisor: [Prof. Wotao Yin](http://www.math.ucla.edu/~wotaoyin/), [Dr. Fei Feng](http://www.math.ucla.edu/~fei.feng/), School of Mathematics, University of California, Los Angeles
 
-[Presentation Sildes 2017](https://cymichael.github.io/resources/Reinforcement_learning.pdf)
+     [Presentation Sildes 2017](https://cymichael.github.io/resources/Reinforcement_learning.pdf)
 
-Reinforcement learning, value iteration, linear optimization.
-
-
+     Reinforcement learning, value iteration, linear optimization.
 
 4. Research Assistant, From Feb. 2016 to Aug. 2018 [*Xi yuan Program*]
 
-- Advisor: [Prof. Shuyu Zhang](http://www.it.fudan.edu.cn/data/view/1187), School of Electronic Engineering, Fudan University
+   - Advisor: [Prof. Shuyu Zhang](http://www.it.fudan.edu.cn/data/view/1187), School of Electronic Engineering, Fudan University
 
-<b>Tengfei Scientific Innovation Group, Xi Yuan Program</b>, School of **Electronic Engineering**
+     <b>Tengfei Scientific Innovation Group, Xi Yuan Program</b>, School of **Electronic Engineering**
 
-[Project Approval](http://www.fdcollege.fudan.edu.cn/tfcollege/98/f8/c7550a104696/page.htm)
+     [Project Approval](http://www.fdcollege.fudan.edu.cn/tfcollege/98/f8/c7550a104696/page.htm)
 
-[Medium Oral Defense](https://mp.weixin.qq.com/s/K2EBv3vt8iOUlw4TRHK4Rg)
+     [Medium Oral Defense](https://mp.weixin.qq.com/s/K2EBv3vt8iOUlw4TRHK4Rg)
 
-[Project Result](https://mp.weixin.qq.com/s/aCEUwctWMN2SiWNSwq9tDQ)
+     [Project Result](https://mp.weixin.qq.com/s/aCEUwctWMN2SiWNSwq9tDQ)
 
-[Outstanding Tengfei Award](http://www.fdcollege.fudan.edu.cn/_upload/article/files/37/cb/ff787aee4a29afd56aeefb8ccce2/59594abd-692e-4383-ae25-858c6ff87fbb.pdf)
-
-
-
-
-
-
+     [Outstanding Tengfei Award](http://www.fdcollege.fudan.edu.cn/_upload/article/files/37/cb/ff787aee4a29afd56aeefb8ccce2/59594abd-692e-4383-ae25-858c6ff87fbb.pdf)
 
 ## Publications
 
