@@ -42,7 +42,7 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
    - [Prof. Yu Liu](https://sites.google.com/site/yuliu2014/home), School of Economics, Fudan University
 
-   - [Syllabus](https://cymichael.github.io/resources/Principles of microeconomics syllabus 2019.pdf), From Sep. 2019 to Jan. 2020
+   - [Syllabus](https://cymichael.github.io/resources/Principles_of_microeconomics_syllabus_2019.pdf), From Sep. 2019 to Jan. 2020
 
    - <u>Undergraduate Level</u>
 
