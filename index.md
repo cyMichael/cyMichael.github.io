@@ -28,9 +28,17 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
 ##Conference
 
-1. The Eighth China Youth Economic Forum, Peking University, Beijing, P.R. China. May 2019
-2. The Seventh SIIFC International Forum, Shanghai, P.R. China. April 2019
-   Paper: The Impact of Green Credit on the Development of Regional Industrial Structure [SIIFC slides 2019](https://cymichael.github.io/resources/SIIFC_Yi_Cui_2019.pdf)
+1. The Eighth China Youth Economic Forum, Peking University, Beijing, P.R. China. 
+
+   May 2019
+
+2. The Seventh SIIFC International Forum, Shanghai, P.R. China. 
+
+   April 2019
+
+   Paper: The Impact of Green Credit on the Development of Regional Industrial Structure
+
+    [SIIFC Slides 2019](https://cymichael.github.io/resources/SIIFC_Yi_Cui_2019.pdf)
 
 ## Patent
 
