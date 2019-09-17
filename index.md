@@ -14,7 +14,7 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 > - With the confusing actual problems, how to solve these questions remains unknown.
 > - Structual modeling of problem, complex relationships and simulation processes in the structure of the models.
 >
-> And I am on the way of these explorations and I have reach some achievements. [Xi Yuan 2016](http://www.fdurop.fudan.edu.cn/projDetail.php?gk=6235&sk=7303&st=3) , [Xi Yuan 2018](http://www.fdurop.fudan.edu.cn/projDetail.php?gk=6818&sk=7303&st=1)
+> And I am on the way of these explorations and I have reach some achievements.
 
 ## Education
 
@@ -25,6 +25,12 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 <b>Fudan University,</b> 2017.6 - 2020.6  <b>Data Science</b> (Minor)
 
 <b>University of California, Los Angeles</b>, 2017.8 - 2017.12
+
+##Conference
+
+1. The Eighth China Youth Economic Forum, Peking University, Beijing, P.R. China. May 2019
+2. The Seventh SIIFC International Forum, Shanghai, P.R. China. April 2019
+   Paper: The Impact of Green Credit on the Development of Regional Industrial Structure [SIIFC slides 2019](https://cymichael.github.io/resources/SIIFC_Yi_Cui_2019.pdf)
 
 ## Patent
 
@@ -51,7 +57,7 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 2. Econometrics (EMAE620009.01)
    - [Prof. Huailu Li](https://huailuli.weebly.com/), School of Economics, Fudan University
    
-   - [Syllabus](https://econ.fudan.edu.cn/ema/Welcome/Current_Students/Course_Schedules.htm), From Sep. 2019 to Dec. 2019
+   - [Syllabus](https://cymichael.github.io/resources/EMA_Econometrics_Syllabus.pdf), From Sep. 2019 to Dec. 2019
    
    - <u>Graduate Level</u>
    
@@ -63,21 +69,25 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
    - Advisor: [Prof. Jimmy Chan](https://jimmyhingchan.weebly.com/), School of Economics, The Chinese University of Hong Kong
 
+     [Presentation Slides 2019](https://cymichael.github.io/resources/Summer_Final_Pre_YiCui.pdf)
+     
      Mechanism design, microeconomic theory, game theory.
      
      Solving an auction problem about land redevelopment, finishing several simulations by using MATLAB. 
 
 2. Research Assistant, From Apr. 2018 to Present [*Xi yuan Program*]
 
-   - Advisor:  [Prof. Xiao Wei](http://www.econ.fudan.edu.cn/teacherdetail.php?tid=209), School of Economics, Fudan University, Coordinator: Jingyan Zhang
+   - Advisor:  [Prof. Xiao Wei](https://econ.fudan.edu.cn/sdpzw-con.jsp?urltype=news.NewsContentUrl&wbtreeid=1658&wbnewsid=14152), School of Economics, Fudan University, Coordinator: Jingyan Zhang
 
+     [Presentation Slides 2018](https://cymichael.github.io/resources/Dynamic_hedging_Yi_Cui.pdf)
+     
      Using the Kreps-Porteus model based on the expected utility model to conduct in-depth research on the dynamic hedging phenomenon. 
 
 3. Research Assistant, From Jul. 2017 to Dec. 2017
 
    - Advisor: [Prof. Wotao Yin](http://www.math.ucla.edu/~wotaoyin/), [Dr. Fei Feng](http://www.math.ucla.edu/~fei.feng/), School of Mathematics, University of California, Los Angeles
 
-     [Presentation Sildes 2017](https://cymichael.github.io/resources/Reinforcement_learning.pdf)
+     [Presentation Slides 2017](https://cymichael.github.io/resources/Reinforcement_learning.pdf)
 
      Reinforcement learning, value iteration, linear optimization.
      
@@ -158,7 +168,7 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
 ## Abilities
 
-- Proficient: Python, PyTorch, MATLAB
+- Proficient: Python, PyTorch, MATLAB, AutoCAD
 - Skilled: STATA, C++, Tensorflow, Web/Android Development
 - Independent research ability
 - English
