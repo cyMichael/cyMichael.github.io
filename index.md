@@ -44,6 +44,8 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
 ## Patent
 
+[Details about Patents](https://cymichael.github.io/resources/patent_details.html)
+
 1. National Patent-S, First Inventor, ***Yi Cui***, 2018
 
    Application Number/Patent Number: 201821803958.4
