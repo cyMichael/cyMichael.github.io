@@ -58,33 +58,33 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
 1. Macroeconomics (EMAE620005.01)
 
-- [Prof. Shi Qiu](https://econ.fudan.edu.cn/sdpzw-con.jsp?urltype=news.NewsContentUrl&wbtreeid=1658&wbnewsid=14745), School of Economics, Fudan University
+   - [Prof. Shi Qiu](https://econ.fudan.edu.cn/sdpzw-con.jsp?urltype=news.NewsContentUrl&wbtreeid=1658&wbnewsid=14745), School of Economics, Fudan University
 
-- [Syllabus](https://cymichael.github.io/resources/EMA_Macro_Syllabus.pdf), From Feb. 2020 to Jun. 2020 [Spring]
+   - [Syllabus](https://cymichael.github.io/resources/EMA_Macro_Syllabus.pdf), From Feb. 2020 to Jun. 2020 [Spring]
 
-- <u>Graduate Level</u>
+   - <u>Graduate Level</u>
 
-  See more resources on the e-learning system (**Canvas**).
+     See more resources on the e-learning system (**Canvas**).
 
 2. Principle of microeconomics (SOSC120020.01)
 
-- [Prof. Yu Liu](https://sites.google.com/site/yuliu2014/home), School of Economics, Fudan University
+   - [Prof. Yu Liu](https://sites.google.com/site/yuliu2014/home), School of Economics, Fudan University
 
-- [Syllabus](https://cymichael.github.io/resources/Principles_of_microeconomics_syllabus_2019.pdf), From Sep. 2019 to Jan. 2020 [Autumn]
+   - [Syllabus](https://cymichael.github.io/resources/Principles_of_microeconomics_syllabus_2019.pdf), From Sep. 2019 to Jan. 2020 [Autumn]
 
-- <u>Undergraduate Level</u>
+   - <u>Undergraduate Level</u>
 
-   See more resources on the e-learning system (**Canvas**).
+     See more resources on the e-learning system (**Canvas**).
 
 3. Econometrics (EMAE620009.01)
 
-- [Prof. Huailu Li](https://huailuli.weebly.com/), School of Economics, Fudan University
+   - [Prof. Huailu Li](https://huailuli.weebly.com/), School of Economics, Fudan University
 
-- [Syllabus](https://cymichael.github.io/resources/EMA_Econometrics_Syllabus.pdf), From Sep. 2019 to Dec. 2019 [Autumn]
+   - [Syllabus](https://cymichael.github.io/resources/EMA_Econometrics_Syllabus.pdf), From Sep. 2019 to Dec. 2019 [Autumn]
 
-- <u>Graduate Level</u>
+   - <u>Graduate Level</u>
 
-   See more resources on the e-learning system (**Canvas**).
+     See more resources on the e-learning system (**Canvas**).
 
 ## Research & Interns
 
