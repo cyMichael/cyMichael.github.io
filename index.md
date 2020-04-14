@@ -196,3 +196,8 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 - Independent research ability
 - English
   <br>
+
+```javascript
+<script type="text/javascript" id="clstr_globe" src="//cdn.clustrmaps.com/globe.js?d=K34Ow0nQ6Yon3gmoCBYzIIz-Xfsu2rZV5B9cvZED0X4"></script>
+```
+
