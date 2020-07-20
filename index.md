@@ -2,7 +2,7 @@
 
 <img class="profile-picture" src="self0.jpeg">
 
-Hi, I'm Yi Cui. I am a senior(4th) year undergraduate student in Fudan University, China, majored in Economics. 
+Hi, I'm Yi Cui. I am a first year Ph.D. student in UNC - Chapel Hill, US, majored in Economics. 
 
 <br>
 
@@ -18,23 +18,29 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
 ## Education
 
-<b>Fudan University,</b> 2015.9 - 2017.6  <b>Mechanical Engineering</b>
+<b>UNC Chapel Hill,</b> 2020.8 - 2025.6(expected)  <b>Ph.D. Economics</b>
 
-<b>Fudan University,</b> 2017.6 - 2020.6  <b>Economics</b>
+<b>Fudan University,</b> 2017.6 - 2020.6  <b>B.A. Economics</b>
 
 <b>Fudan University,</b> 2017.6 - 2020.6  <b>Data Science</b> (Minor)
 
 <b>University of California, Los Angeles</b>, 2017.8 - 2017.12
 
+<b>Fudan University,</b> 2015.9 - 2017.6  <b>Mechanical Engineering</b>
+
 ## Conference
 
 
 
-1. The Eighth China Youth Economic Forum, Peking University, Beijing, P.R. China. 
+1. The Ninth China Youth Economic Forum, Peking University, Beijing, P.R. China. 
+
+   May 2020
+
+2. The Eighth China Youth Economic Forum, Peking University, Beijing, P.R. China. 
 
    May 2019
 
-2. The Seventh SIIFC International Forum, Shanghai, P.R. China. 
+3. The Seventh SIIFC International Forum, Shanghai, P.R. China. 
 
    April 2019
 
