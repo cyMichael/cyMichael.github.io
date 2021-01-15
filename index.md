@@ -8,7 +8,7 @@ Hi, I'm Yi Cui. I am a first year Ph.D. student in UNC - Chapel Hill, US, majore
 
 ## Research Interest
 
-My research interests mainly lie on Economics Research combined with Data Science. My current research focus is mainly on Mechanism Design, Asset Portfolio and Microeconomic Theory. 
+My research interests mainly lie on Economics Research combined with Data Science. My current research focus is mainly on Mechanism Design, Asset Portfolio. 
 
 > While all of these areas are easy to start with, it is quite complicated to further digest and do research. Previous efforts may push us towards ultimate goal.
 > - With the confusing actual problems, how to solve these questions remains unknown.
@@ -18,13 +18,13 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
 ## Education
 
-<b>UNC Chapel Hill,</b> 2020.8 - 2025.6(expected)  <b>Ph.D. Economics</b>
+<b>UNC Chapel Hill,</b> 2020.8 - 2025.6 (expected)  <b>Ph.D. Economics</b>
 
 <b>Fudan University,</b> 2017.6 - 2020.6  <b>B.A. Economics</b>
 
 <b>Fudan University,</b> 2017.6 - 2020.6  <b>Data Science</b> (Minor)
 
-<b>University of California, Los Angeles</b>, 2017.8 - 2017.12
+<b>University of California, Los Angeles</b>, 2017.8 - 2017.12 <b>Mechanical Engineering</b>
 
 <b>Fudan University,</b> 2015.9 - 2017.6  <b>Mechanical Engineering</b>
 
@@ -62,7 +62,53 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
 ## Teaching Assistant
 
-1.Econometrics (Summer Course)
+
+
+<u>**UNC Chapel Hill**</u>
+
+1.ECON  510/001 LEC
+
+- [Prof. Sergio Parreiras](https://econ.unc.edu/directory/sergiop/), School of Economics, UNC Chapel Hill
+
+- [Syllabus](https://catalog.unc.edu/courses/econ/), From Jan. 2021 to May. 2021 [Fall]
+
+- <u>Undergraduate Level</u>
+
+  See more resources on the e-learning system (**Sakai**).
+
+
+
+
+
+
+
+<u>**Fudan University**</u>
+
+1.Quantitative Risk Management (ECON2170027)
+
+- [Prof. Yuwei Zhao](http://www.scms.fudan.edu.cn/Data/View/645.html), School of Economics, Fudan University
+
+- Syllabus, From Dec. 2020 to Jan. 2021 [Fall]
+
+- <u>Undergraduate Level</u>
+
+  See more resources on the e-learning system (**Canvas**).
+
+
+
+2.Macroeconomics (IEC)
+
+- [Prof. Jing Zhou](https://jing-zhou.weebly.com/), School of Economics, Fudan University
+
+- [Syllabus](https://cymichael.github.io/resources/Intermediate Macroeconomics.pdf), From Sep. 2020 to Dec. 2020 [Fall]
+
+- <u>Undergraduate Level</u>
+
+  See more resources on the e-learning system (**Canvas**).
+
+
+
+3.Econometrics (Summer Course)
 
 - [Prof. Shi Qiu](https://econ.fudan.edu.cn/sdpzw-con.jsp?urltype=news.NewsContentUrl&wbtreeid=1658&wbnewsid=14745), School of Economics, Fudan University
 
@@ -74,7 +120,7 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
 
 
-2.International Finance (Summer Course)
+4.International Finance (Summer Course)
 
 - [Prof. Sihao Chen](https://chensihao.weebly.com), School of Economics, Fudan University
 
@@ -86,7 +132,7 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
 
 
-3.Macroeconomics (EMAE620005.01)
+5.Macroeconomics (EMAE620005.01)
 
 - [Prof. Shi Qiu](https://econ.fudan.edu.cn/sdpzw-con.jsp?urltype=news.NewsContentUrl&wbtreeid=1658&wbnewsid=14745), School of Economics, Fudan University
 
@@ -96,21 +142,21 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
   See more resources on the e-learning system (**Canvas**).
 
-4.Principle of microeconomics (SOSC120020.01)
+6.Principle of microeconomics (SOSC120020.01)
 
 - [Prof. Yu Liu](https://sites.google.com/site/yuliu2014/home), School of Economics, Fudan University
 
-- [Syllabus](https://cymichael.github.io/resources/Principles_of_microeconomics_syllabus_2019.pdf), From Sep. 2019 to Jan. 2020 [Autumn]
+- [Syllabus](https://cymichael.github.io/resources/Principles_of_microeconomics_syllabus_2019.pdf), From Sep. 2019 to Jan. 2020 [Fall]
 
 - <u>Undergraduate Level</u>
 
   See more resources on the e-learning system (**Canvas**).
 
-5.Econometrics (EMAE620009.01)
+7.Econometrics (EMAE620009.01)
 
 - [Prof. Huailu Li](https://huailuli.weebly.com/), School of Economics, Fudan University
 
-- [Syllabus](https://cymichael.github.io/resources/EMA_Econometrics_Syllabus.pdf), From Sep. 2019 to Dec. 2019 [Autumn]
+- [Syllabus](https://cymichael.github.io/resources/EMA_Econometrics_Syllabus.pdf), From Sep. 2019 to Dec. 2019 [Fall]
 
 - <u>Graduate Level</u>
 
