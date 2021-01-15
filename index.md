@@ -64,7 +64,7 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
 
 
-<u>UNC Chapel Hill</u>
+**UNC Chapel Hill**
 
 1.ECON  510/001 LEC
 
@@ -82,7 +82,7 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
 
 
-<u>Fudan University</u>
+**Fudan University**
 
 1.Quantitative Risk Management (ECON2170027)
 
