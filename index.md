@@ -70,7 +70,7 @@ My research interests mainly lie on Economics Research combined with Data Scienc
 
 - [Prof. Sergio Parreiras](https://econ.unc.edu/directory/sergiop/), School of Economics, UNC Chapel Hill
 
-- [Syllabus](https://catalog.unc.edu/courses/econ/), From Jan. 2021 to May. 2021 [Fall]
+- [Syllabus](https://catalog.unc.edu/courses/econ/), From Jan. 2021 to May. 2021 [Spring]
 
 - <u>Undergraduate Level</u>
 
