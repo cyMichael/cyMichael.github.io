@@ -238,7 +238,7 @@ Advice
 
 
 
-Advice
+Ability
 ======
 
 - Proficient: Python, PyTorch, MATLAB, AutoCAD
