@@ -87,29 +87,29 @@ author:
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   # googlescholar    : "http://yourfullgooglescholarurl.com"
-  # email            : "yicui@unc.edu"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  email            : "yicui@unc.edu"
+  researchgate     : "https://www.researchgate.net/profile/Yi-Cui-16"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  # facebook         :
+  facebook         : "yi.cui.50"
   foursquare       :
   github           : "cyMichael"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "cuiyi1997"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "yi-cui-259896137"
   # orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : https://stackoverflow.com/users/8086183/michael-cy
   steam            :
   tumblr           :
-  # twitter          : "replacethistwitterhandle"
+  twitter          : "cy15307130001"
   vine             :
   weibo            :
   xing             :
