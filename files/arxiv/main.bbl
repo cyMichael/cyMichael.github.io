@@ -1,0 +1,188 @@
+\begin{thebibliography}{35}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem[{Angrist, Imbens, and Rubin(1996)}]{Angrist1996IdentificationVariables}
+Angrist, Joshua~D., Guido~W. Imbens, and Donald~B. Rubin. 1996.
+\newblock \enquote{{Identification of Causal Effects Using Instrumental Variables}.}
+\newblock \emph{Journal of the American Statistical Association} 91~(434):444--455.
+
+\bibitem[{Balke and Pearl(1997)}]{Balke1997BoundsCompliance}
+Balke, Alexander and Judea Pearl. 1997.
+\newblock \enquote{{Bounds on treatment effects from studies with imperfect compliance}.}
+\newblock \emph{Journal of the American Statistical Association} 92~(439):1171--1176.
+\newblock \urlprefix\url{https://www.tandfonline.com/action/journalInformation?journalCode=uasa20}.
+
+\bibitem[{Bursztyn, Gonz{\'a}lez, and Yanagizawa-Drott(2020)}]{bursztyn2020misperceived}
+Bursztyn, Leonardo, Alessandra~L Gonz{\'a}lez, and David Yanagizawa-Drott. 2020.
+\newblock \enquote{Misperceived social norms: Women working outside the home in Saudi Arabia.}
+\newblock \emph{American economic review} 110~(10):2997--3029.
+
+\bibitem[{Cai et~al.(2008)Cai, Kuroki, Pearl, and Tian}]{cai2008bounds}
+Cai, Zhihong, Manabu Kuroki, Judea Pearl, and Jin Tian. 2008.
+\newblock \enquote{Bounds on direct effects in the presence of confounded intermediate variables.}
+\newblock \emph{Biometrics} 64~(3):695--701.
+
+\bibitem[{Dahl, Huber, and Mellace(2023)}]{dahl2023never}
+Dahl, Christian~M, Martin Huber, and Giovanni Mellace. 2023.
+\newblock \enquote{It is never too LATE: a new look at local average treatment effects with or without defiers.}
+\newblock \emph{The Econometrics Journal} 26~(3):378--404.
+
+\bibitem[{de~Chaisemartin(2017)}]{deChaisemartin2017ToleratingMonotonicity}
+de~Chaisemartin, Clément. 2017.
+\newblock \enquote{{Tolerating defiance? Local average treatment effects without monotonicity}.}
+\newblock \emph{Quantitative Economics} 8~(2):367--396.
+
+\bibitem[{Fiorini and Stevens(2021)}]{Fiorini2021ScrutinizingDesigns}
+Fiorini, Mario and Katrien Stevens. 2021.
+\newblock \enquote{{Scrutinizing the Monotonicity Assumption in IV and fuzzy RD designs}.}
+\newblock \emph{Oxford Bulletin of Economics and Statistics} 83~(6):1475--1526.
+
+\bibitem[{Flores and Flores-Lagunes(2013)}]{flores2013partial}
+Flores, Carlos~A and Alfonso Flores-Lagunes. 2013.
+\newblock \enquote{Partial identification of local average treatment effects with an invalid instrument.}
+\newblock \emph{Journal of Business \& Economic Statistics} 31~(4):534--545.
+
+\bibitem[{Heckman and Pinto(2018)}]{heckman2018unordered}
+Heckman, James~J and Rodrigo Pinto. 2018.
+\newblock \enquote{Unordered monotonicity.}
+\newblock \emph{Econometrica} 86~(1):1--35.
+
+\bibitem[{Heckman and Vytlacil(2001)}]{Heckman2001Policy-RelevantEffects}
+Heckman, James~J and Edward Vytlacil. 2001.
+\newblock \enquote{{Policy-Relevant Treatment Effects}.}
+\newblock \emph{American Economic Review} 91~(2):107--111.
+
+\bibitem[{Heckman and Vytlacil(2005)}]{Heckman2005StructuralEvaluation}
+Heckman, James~J. and Edward Vytlacil. 2005.
+\newblock \enquote{{Structural equations, treatment effects, and econometric policy evaluation}.}
+\newblock \emph{Econometrica} 73~(3):669--738.
+
+\bibitem[{Horowitz and Manski(1995)}]{Horowitz1995IdentificationData}
+Horowitz, Joel~L and Charles~F Manski. 1995.
+\newblock \enquote{{Identification and Robustness with Contaminated and Corrupted Data}.}
+\newblock \emph{Econometrica} 63~(2):281--302.
+
+\bibitem[{Huber, Laffers, and Mellace(2017)}]{Huber2017SharpNoncompliance}
+Huber, Martin, Lukas Laffers, and Giovanni Mellace. 2017.
+\newblock \enquote{{Sharp IV Bounds on Average Treatment Effects on the Treated and Other Populations Under Endogeneity and Noncompliance}.}
+\newblock \emph{Journal of Applied Econometrics} 32~(1):56--79.
+
+\bibitem[{Imbens and Angrist(1994)}]{imbens1994identification}
+Imbens, Guido~W and Joshua~D Angrist. 1994.
+\newblock \enquote{Identification and estimation of local average treatment effects.}
+\newblock \emph{Econometrica} 62~(2):467--475.
+
+\bibitem[{Imbens and Manski(2004)}]{imbens2004confidence}
+Imbens, Guido~W and Charles~F Manski. 2004.
+\newblock \enquote{Confidence intervals for partially identified parameters.}
+\newblock \emph{Econometrica} 72~(6):1845--1857.
+
+\bibitem[{Imbens and Rubin(1997)}]{imbens1997estimating}
+Imbens, Guido~W and Donald~B Rubin. 1997.
+\newblock \enquote{Estimating outcome distributions for compliers in instrumental variables models.}
+\newblock \emph{The Review of Economic Studies} 64~(4):555--574.
+
+\bibitem[{K{\'{e}}dagni(2023)}]{Kedagni2023IdentifyingTypes}
+K{\'{e}}dagni, Désiré. 2023.
+\newblock \enquote{{Identifying treatment effects in the presence of confounded types}.}
+\newblock \emph{Journal of Econometrics} 234~(2):479--511.
+\newblock \urlprefix\url{https://doi.org/10.1016/j.jeconom.2021.01.012}.
+
+\bibitem[{K{\'{e}}dagni and Mourifi{\'{e}}(2020)}]{Kedagni2020GeneralizedAssumption}
+K{\'{e}}dagni, Désiré and Ismael Mourifi{\'{e}}. 2020.
+\newblock \enquote{{Generalized instrumental inequalities: testing the instrumental variable independence assumption}.}
+\newblock \emph{Biometrika} 107~(3):661--675.
+\newblock \urlprefix\url{https://academic.oup.com/biomet/article/107/3/661/5767137}.
+
+\bibitem[{Kitagawa(2015)}]{Kitagawa2015AValidity}
+Kitagawa, Toru. 2015.
+\newblock \enquote{{A Test for Instrument Validity}.}
+\newblock \emph{Econometrica} 83~(5):2043--2063.
+
+\bibitem[{Kitagawa(2021)}]{Kitagawa2021TheIndependence}
+---{}---{}---. 2021.
+\newblock \enquote{{The identification region of the potential outcome distributions under instrument independence}.}
+\newblock \emph{Journal of Econometrics} 225~(2):231--253.
+\newblock \urlprefix\url{https://doi.org/10.1016/j.jeconom.2021.03.006}.
+
+\bibitem[{Kwon and Roth(2024)}]{kwon2024testing}
+Kwon, Soonwoo and Jonathan Roth. 2024.
+\newblock \enquote{Testing Mechanisms.}
+\newblock \emph{arXiv preprint arXiv:2404.11739} .
+
+\bibitem[{Lee(2009)}]{Lee2009TrainingEffects}
+Lee, David~S. 2009.
+\newblock \enquote{{Training, Wages, and Sample Selection: Estimating Sharp Bounds on Treatment Effects}.}
+\newblock \emph{Review of Economic Studies} 76:1071--1102.
+\newblock \urlprefix\url{https://academic.oup.com/restud/article/76/3/1071/1590707}.
+
+\bibitem[{Lee and Salani{\'{e}}(2018)}]{Lee2018IdentifyingTreatments}
+Lee, Sokbae and Bernard Salani{\'{e}}. 2018.
+\newblock \enquote{Identifying Effects of Multivalued Treatments.}
+\newblock \emph{Econometrica} 86~(6):1939--1963.
+
+\bibitem[{Li, K{\'e}dagni, and Mourifi{\'e}(2024)}]{li2024discordant}
+Li, Lixiong, D{\'e}sir{\'e} K{\'e}dagni, and Isma{\"e}l Mourifi{\'e}. 2024.
+\newblock \enquote{Discordant Relaxations of Misspecified Models.}
+\newblock \emph{Quantitative Economics} 15~(2):331--379.
+
+\bibitem[{Manski(1990)}]{Manski1990NonparametricEffects}
+Manski, Charles~F. 1990.
+\newblock \enquote{{Nonparametric Bounds on Treatment Effects}.}
+\newblock \emph{American Economic Review} 80~(2):319--323.
+
+\bibitem[{Manski(2003)}]{manski2003partial}
+---{}---{}---. 2003.
+\newblock \emph{Partial identification of probability distributions}.
+\newblock Springer Science \& Business Media.
+
+\bibitem[{Manski(2011)}]{manski2011policy}
+---{}---{}---. 2011.
+\newblock \enquote{Policy analysis with incredible certitude.}
+\newblock \emph{The Economic Journal} 121~(554):F261--F289.
+
+\bibitem[{Masten and Poirier(2021)}]{Masten2021SalvagingModels}
+Masten, Matthew~A. and Alexandre Poirier. 2021.
+\newblock \enquote{{Salvaging Falsified Instrumental Variable Models}.}
+\newblock \emph{Econometrica} 89~(3):1449--1469.
+
+\bibitem[{Mourifi\'e, Henry, and M\'eango(2020)}]{mourifie2020sharp}
+Mourifi\'e, Ismael, Marc Henry, and Romuald M\'eango. 2020.
+\newblock \enquote{Sharp bounds and testability of a Roy model of STEM major choices.}
+\newblock \emph{Journal of Political Economy} 128~(8):3220--3283.
+
+\bibitem[{Mourifi{\'{e}} and Wan(2017)}]{Mourifie2017TestingAssumptions}
+Mourifi{\'{e}}, Ismael and Yuanyuan Wan. 2017.
+\newblock \enquote{{Testing Local Average Treatment Effect Assumptions}.}
+\newblock \emph{Review of Economics and Statistics} 99~(2):305--313.
+\newblock \urlprefix\url{http://direct.mit.edu/rest/article-pdf/99/2/305/1918591/rest_a_00622.pdf}.
+
+\bibitem[{Nevo and Rosen(2012)}]{Nevo2012IdentificationInstruments}
+Nevo, Aviv and Adam~M. Rosen. 2012.
+\newblock \enquote{{Identification with imperfect instruments}.}
+\newblock \emph{Review of Economics and Statistics} 94~(3):659--671.
+
+\bibitem[{Noack(2021)}]{Noack2021SensitivityAssumption}
+Noack, Claudia. 2021.
+\newblock \enquote{{Sensitivity of LATE Estimates to Violations of the Monotonicity Assumption}.}
+\newblock \emph{Working paper, University of Mannheim} \urlprefix\url{http://arxiv.org/abs/2106.06421}.
+
+\bibitem[{Richardson and Robins(2010)}]{richardson2010analysis}
+Richardson, Thomas~S and James~M Robins. 2010.
+\newblock \enquote{Analysis of the binary instrumental variable model.}
+\newblock \emph{Heuristics, Probability and Causality: A Tribute to Judea Pearl} 25:415--444.
+
+\bibitem[{Small et~al.(2017)Small, Tan, Ramsahai, Lorch, and Brookhart}]{small2017instrumental}
+Small, Dylan~S, Zhiqiang Tan, Roland~R Ramsahai, Scott~A Lorch, and M~Alan Brookhart. 2017.
+\newblock \enquote{Instrumental variable estimation with a stochastic monotonicity assumption.}
+\newblock \emph{Statistical Science} 32~(4):561--579.
+
+\bibitem[{Sun and W{\"u}thrich(2022)}]{sun2022pairwise}
+Sun, Zhenting and Kaspar W{\"u}thrich. 2022.
+\newblock \enquote{Pairwise Valid Instruments.}
+\newblock \emph{arXiv preprint arXiv:2203.08050} .
+
+\end{thebibliography}
