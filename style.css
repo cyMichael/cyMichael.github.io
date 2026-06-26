@@ -227,6 +227,43 @@ footer {
     margin-top: 60px;
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.visitor-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.visitor-map h2 {
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.visitor-widget {
+    min-height: 125px;
+    width: 250px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.visitor-widget span {
+    max-width: 100%;
+}
+
+.visitor-stats-link {
+    color: var(--accent-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     .hero {
