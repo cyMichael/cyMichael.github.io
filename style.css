@@ -243,13 +243,14 @@ footer {
 
 .visitor-map h2 {
     color: var(--text-primary);
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.05rem;
+    font-weight: 700;
 }
 
 .visitor-widget {
-    min-height: 125px;
-    width: 250px;
+    height: 225px;
+    line-height: 0;
+    width: 450px;
     max-width: 100%;
     overflow: hidden;
 }
@@ -287,5 +288,27 @@ footer {
     
     .section-title {
         text-align: center;
+    }
+
+    .visitor-widget {
+        height: 160px;
+        width: 320px;
+    }
+
+    .visitor-widget > span {
+        max-width: none;
+        transform: scale(0.711111);
+        transform-origin: top left;
+    }
+}
+
+@media (max-width: 360px) {
+    .visitor-widget {
+        height: 140px;
+        width: 280px;
+    }
+
+    .visitor-widget > span {
+        transform: scale(0.622222);
     }
 }
