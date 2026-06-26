@@ -260,7 +260,15 @@ footer {
 }
 
 .visitor-widget span {
+    display: block !important;
+    margin-right: 0 !important;
     max-width: 100%;
+    position: relative;
+}
+
+.visitor-widget img {
+    left: 0;
+    top: 0;
 }
 
 .visitor-count {
