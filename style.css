@@ -239,6 +239,9 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
 }
 
 .visitor-map h2 {
@@ -250,6 +253,7 @@ footer {
 .visitor-widget {
     height: 125px;
     line-height: 0;
+    margin: 0 auto;
     width: 250px;
     max-width: 100%;
     overflow: hidden;
@@ -263,11 +267,14 @@ footer {
     color: var(--text-secondary);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     font-size: 0.85rem;
+    width: 100%;
 }
 
 .visitor-stats-link {
+    display: inline-block;
     color: var(--accent-color);
     font-size: 0.85rem;
     font-weight: 500;
