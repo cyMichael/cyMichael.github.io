@@ -259,16 +259,16 @@ footer {
     overflow: hidden;
 }
 
-.visitor-widget span {
+.visitor-widget > span {
     display: block !important;
     margin-right: 0 !important;
     max-width: 100%;
     position: relative;
 }
 
-.visitor-widget img {
-    left: 0;
-    top: 0;
+.visitor-widget > span > img {
+    left: 0 !important;
+    top: 0 !important;
 }
 
 .visitor-count {
