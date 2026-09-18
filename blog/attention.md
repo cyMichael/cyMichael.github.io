@@ -2,6 +2,8 @@
 
 *September 17, 2026 · Approx. 18-minute read*
 
+<p id="attention-read-counter" class="article-read-counter" hidden aria-live="polite"><span id="attention-read-count">Loading</span> reads</p>
+
 ## Abstract
 
 [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762) introduced the Transformer: a sequence model built from attention, feed-forward networks, residual connections, and normalization rather than recurrence. This note develops the encoder-style self-attention calculation from its matrix shapes upward, works through a numerical example, and collects the technical details that frequently matter in machine-learning interviews.

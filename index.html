@@ -87,6 +87,21 @@
       max-width: 640px;
     }
 
+    .article-read-counter {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin: 0.2rem 0 2.2rem;
+      color: #66757d;
+      font-size: 0.9rem;
+    }
+
+    .article-read-counter::before {
+      content: "◷";
+      color: var(--theme-color);
+      font-size: 1rem;
+    }
+
     @media screen and (max-width: 768px) {
       .markdown-section {
         padding: 2.2rem 1.4rem 3.5rem;
@@ -174,6 +189,37 @@
       }
     }
 
+    function renderAttentionReadCount() {
+      const counter = document.getElementById('attention-read-counter');
+      const value = document.getElementById('attention-read-count');
+
+      if (!counter || !value) return;
+
+      const isPublishedSite = window.location.hostname === 'cymichael.github.io'
+        || window.location.hostname === 'www.cymichael.github.io';
+
+      if (!isPublishedSite) {
+        counter.hidden = true;
+        return;
+      }
+
+      counter.hidden = false;
+      value.textContent = 'Loading';
+
+      fetch('https://countapi.mileshilliard.com/api/v1/hit/cymichael-github-io-attention-reads-v1')
+        .then(function (response) {
+          if (!response.ok) throw new Error('Read counter request failed');
+          return response.json();
+        })
+        .then(function (data) {
+          if (typeof data.value !== 'number') throw new Error('Invalid read counter response');
+          value.textContent = new Intl.NumberFormat().format(data.value);
+        })
+        .catch(function () {
+          counter.hidden = true;
+        });
+    }
+
     window.$docsify = {
       name: "Yi Cui",
       repo: '',
@@ -197,6 +243,7 @@
             window.setTimeout(() => {
               renderDocsifyMath(0);
               placeVisitorMap(0);
+              renderAttentionReadCount();
             }, 0);
           });
         }
