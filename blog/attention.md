@@ -33,7 +33,18 @@ The convention in this note is important: the $i$-th **row** of $A$ is the distr
 
 ## 2. Scaled dot-product attention
 
-The attention map and output are
+The standard attention operation is
+
+$$
+\boxed{
+\operatorname{Attention}(Q,K,V;M)
+=
+\operatorname{softmax}_{\text{row}}
+\left(\frac{QK^\top}{\sqrt{d_k}}+M\right)V.
+}
+$$
+
+Here $M$ is optional: setting $M=0$ recovers the usual unmasked formula. Writing the intermediate score, weight, and output matrices explicitly gives
 
 $$
 S = \frac{QK^\top}{\sqrt{d_k}} + M, \qquad
@@ -49,7 +60,7 @@ A_{ij} = \frac{\exp(S_{ij})}{\sum_{\ell=1}^{n}\exp(S_{i\ell})}.
 \tag{2}
 $$
 
-Thus $A_{ij}$ measures how much token $i$ reads the value at token $j$. Every row of $A$ sums to one, so each output row is a convex combination:
+Thus $A_{ij}$ measures how much token $i$ reads the value at token $j$. Before any attention-weight dropout, every row of $A$ sums to one, so each output row is a convex combination:
 
 $$
 o_i = \sum_{j=1}^{n} A_{ij}v_j.
@@ -58,21 +69,27 @@ $$
 
 ### Why divide by $\sqrt{d_k}$?
 
-Suppose the coordinates of a query $q$ and key $k$ are independent, zero-mean, unit-variance random variables. Then
+Under the idealized assumption that all query and key coordinates are mutually independent, zero-mean, unit-variance random variables,
 
 $$
 q^\top k = \sum_{r=1}^{d_k}q_rk_r,
 \qquad
-\operatorname{Var}(q^\top k) \approx d_k.
+\mathbb{E}[q_rk_r]=0,
+\qquad
+\operatorname{Var}(q_rk_r)=1.
 $$
 
-Without scaling, score magnitudes grow with $d_k$. The softmax then becomes too peaked, which produces near-zero gradients for most alternatives. Dividing by $\sqrt{d_k}$ keeps the score variance approximately constant:
+Consequently, independence gives
 
 $$
-\operatorname{Var}\left(\frac{q^\top k}{\sqrt{d_k}}\right) \approx 1.
+\operatorname{Var}(q^\top k)
+= \sum_{r=1}^{d_k}\operatorname{Var}(q_rk_r)
+= d_k,
+\qquad
+\operatorname{Var}\left(\frac{q^\top k}{\sqrt{d_k}}\right)=1.
 $$
 
-This is a variance-control argument, not merely a numerical convention.
+Without scaling, score *differences* can grow with $d_k$, making softmax too peaked and leaving very small gradients for most alternatives. Softmax is invariant to a shared shift, $\operatorname{softmax}(s+c\mathbf 1)=\operatorname{softmax}(s)$, so large scores alone are not the issue; differences between scores are. For learned queries and keys the independence and unit-variance assumptions need not hold, making this a useful variance-control heuristic rather than a guarantee.
 
 ## 3. A matrix calculation by hand
 
@@ -109,7 +126,29 @@ A_{1,:} = \operatorname{softmax}\left(
 = \begin{bmatrix}0.401 & 0.198 & 0.401\end{bmatrix}.
 $$
 
-The first contextualized output is consequently
+Computing softmax for every row gives the complete attention matrix
+
+$$
+A \approx
+\begin{bmatrix}
+0.401112 & 0.197776 & 0.401112 \\
+0.197776 & 0.401112 & 0.401112 \\
+0.248255 & 0.248255 & 0.503490
+\end{bmatrix}.
+$$
+
+The complete contextualized output is
+
+$$
+O=AV \approx
+\begin{bmatrix}
+0.802224 & 0.598888 \\
+0.598888 & 0.802224 \\
+0.751745 & 0.751745
+\end{bmatrix}.
+$$
+
+For example, the first contextualized output is
 
 $$
 o_1 = 0.401\begin{bmatrix}1 & 0\end{bmatrix}
@@ -120,9 +159,9 @@ $$
 
 The output is not a copy of one token. It is a content-dependent mixture of the available value vectors.
 
-## 4. Causal masking and decoder attention
+## 4. Attention masks and causal decoder attention
 
-An encoder may attend to all input positions. An autoregressive decoder must not use future tokens while predicting the next token. For one-based positions, define the causal mask
+The optional matrix $M$ constrains which query--key pairs are allowed. In full self-attention it has shape $n\times n$; in cross-attention it can have shape $n_q\times n_k$. Padding masks, local-window masks, and causal masks are all examples. An encoder may attend to all input positions, while an autoregressive decoder must not use future tokens when predicting the next token. For one-based positions, the causal mask is
 
 $$
 M_{ij} =
@@ -143,11 +182,30 @@ M = \begin{bmatrix}
 \end{bmatrix}.
 $$
 
-Because $\exp(-\infty)=0$, masked locations receive exactly zero probability after softmax. In practice, a very negative finite number is often used to avoid floating-point exceptions. Padding masks use the same mechanism to prevent attention to unused positions in a batch.
+Because $\exp(-\infty)=0$, a masked location receives exactly zero probability whenever its row has at least one allowed finite score. For example,
+
+$$
+\operatorname{softmax}([2,-\infty,1])
+=
+\left[
+\frac{e^2}{e^2+e},\;0,\;\frac{e}{e^2+e}
+\right].
+$$
+
+Implementations may instead use Boolean masks or sufficiently negative, dtype-compatible finite values. A finite sentinel can yield a tiny nonzero weight before numerical underflow; it does not by itself make a fully masked row correct. Mathematically, $\operatorname{softmax}([ -\infty,-\infty,-\infty])$ is undefined, so fully masked rows require explicit handling under the chosen implementation contract.
+
+For next-token training, the causal condition $j\leq i$ is consistent with shifted labels:
+
+```text
+Inputs:   [BOS, x1, x2, x3]
+Targets:  [x1,  x2, x3, x4]
+```
+
+At position $i$, the model may read the current shifted input and its prefix, but it cannot read a future target token.
 
 ## 5. Multi-head attention
 
-One attention head has a single learned similarity metric. Multi-head attention lets the model learn several metrics in parallel:
+One attention head has one learned compatibility function. Multi-head attention lets the model learn several such functions in parallel:
 
 $$
 \operatorname{head}_r = \operatorname{Attention}(XW_r^Q, XW_r^K, XW_r^V),
@@ -160,13 +218,41 @@ $$
 \tag{4}
 $$
 
-Typically, $d_k=d_v=d_{\text{model}}/h$, so concatenating all heads restores width $d_{\text{model}}$. If all projection matrices are square at model width, the $Q$, $K$, $V$, and output projections together have about $4d_{\text{model}}^2$ parameters. Changing $h$ repartitions the representation; it does not by itself multiply this dominant parameter count.
+Let $d=d_{\text{model}}$ and use the usual head width $d_h=d/h$. Then each head has rectangular projection matrices
+
+$$
+W_r^Q,W_r^K,W_r^V \in \mathbb{R}^{d\times d_h}.
+$$
+
+Concatenating all $h$ heads restores width $d$. Equivalently, the combined query, key, and value projections are each $d\times d$, and the output projection is $d\times d$. Excluding biases, the total is therefore
+
+$$
+3h\left(d\frac{d}{h}\right)+d^2=4d^2
+$$
+
+projection weights. Changing $h$ repartitions the representation; it does not by itself multiply this dominant parameter count. The score $q_i^\top k_j=x_i^\top W^Q(W^K)^\top x_j$ is a learned compatibility score, not necessarily a symmetric similarity metric.
 
 Multiple heads can specialize in different relationships—such as local syntax, long-range agreement, or entity reference—although these roles are learned rather than assigned by hand.
 
 ## 6. Position and the Transformer block
 
-Attention is permutation-equivariant: if the rows of $X$ are shuffled, the rows of the output shuffle in the same way. Position information must therefore enter the model. The original paper adds sinusoidal positional encodings $P$ to token embeddings:
+Unmasked self-attention without positional signals is permutation-equivariant. More precisely, define
+
+$$
+F_M(X)=
+\operatorname{softmax}_{\mathrm{row}}
+\left(
+\frac{XW^Q(XW^K)^\top}{\sqrt{d_k}}+M
+\right)XW^V.
+$$
+
+For any permutation matrix $\Pi$,
+
+$$
+F_{\Pi M\Pi^\top}(\Pi X)=\Pi F_M(X).
+$$
+
+Thus $F_0(\Pi X)=\Pi F_0(X)$: unmasked attention alone cannot distinguish sequence order. Positional encodings, position-dependent biases, and structured masks can introduce order. In particular, a fixed causal mask already breaks arbitrary permutation equivariance. The original paper adds sinusoidal positional encodings $P$ to token embeddings:
 
 $$
 P_{p,2i} = \sin\left(\frac{p}{10000^{2i/d_{\text{model}}}}\right),
@@ -174,9 +260,9 @@ P_{p,2i} = \sin\left(\frac{p}{10000^{2i/d_{\text{model}}}}\right),
 P_{p,2i+1} = \cos\left(\frac{p}{10000^{2i/d_{\text{model}}}}\right),
 $$
 
-and uses $X^{(0)}=E+P$. Modern models may instead use learned, relative, or rotary position methods; the fundamental requirement is to make order available to attention.
+If $E$ denotes unscaled embeddings, the original input is $X^{(0)}=\sqrt{d_{\text{model}}}E+P$ (before dropout). Writing $E+P$ is equivalent when that scale is absorbed into the embedding definition. Modern models may instead use learned, relative, or rotary position methods.
 
-A common pre-layer-normalized Transformer block is
+The following equations show a common pre-layer-normalized Transformer block with a GELU feed-forward network. The original 2017 Transformer instead used post-layer normalization and ReLU:
 
 $$
 \widetilde{H}^{(\ell)} = H^{(\ell)} + \operatorname{MHA}(\operatorname{LN}(H^{(\ell)})),
@@ -186,11 +272,13 @@ $$
 H^{(\ell+1)} = \widetilde{H}^{(\ell)} + \operatorname{FFN}(\operatorname{LN}(\widetilde{H}^{(\ell)})),
 $$
 
-with a position-wise feed-forward network such as
+With the row-wise convention used here, its position-wise feed-forward network is
 
 $$
-\operatorname{FFN}(z) = W_2\,\operatorname{GELU}(W_1z+b_1)+b_2.
+\operatorname{FFN}(Z)=\operatorname{GELU}(ZW_1+b_1)W_2+b_2,
 $$
+
+where $Z\in\mathbb{R}^{n\times d}$, $W_1\in\mathbb{R}^{d\times d_{\mathrm{ff}}}$, and $W_2\in\mathbb{R}^{d_{\mathrm{ff}}\times d}$; biases are broadcast across rows.
 
 Residual paths preserve an easy route for information and gradients; layer normalization stabilizes the scale of each token representation; the FFN supplies nonlinear feature transformation independently at each position.
 
@@ -202,9 +290,15 @@ $$
 \mathcal{L}(\theta) = -\sum_{t=1}^{T}\log p_\theta(x_t\mid x_{<t}).
 $$
 
-With sequence length $n$ and model width $d$, a self-attention layer has roughly $\mathcal{O}(n^2d)$ compute from attention scores and value mixing, plus $\mathcal{O}(nd^2)$ projection compute. Its attention-weight memory is $\mathcal{O}(hn^2)$ for $h$ heads. In contrast, a recurrent layer has $\mathcal{O}(nd^2)$ compute and sequential dependence across positions.
+With sequence length $n$ and model width $d$, a self-attention layer has roughly $\mathcal{O}(n^2d)$ arithmetic from attention scores and value mixing, plus $\mathcal{O}(nd^2)$ projection arithmetic. A conventional implementation that explicitly materializes all attention scores or weights uses $\mathcal{O}(hn^2)$ elements for $h$ heads. That full quadratic storage is not unavoidable: memory-efficient exact attention implementations can avoid materializing the complete $n\times n$ matrix in high-bandwidth memory, while dense attention arithmetic remains quadratic. In contrast, a recurrent layer has $\mathcal{O}(nd^2)$ compute and sequential dependence across positions.
 
-During autoregressive generation, recomputing keys and values for the entire prefix would be wasteful. A **KV cache** stores past $K$ and $V$ tensors. Each new token still attends over the growing history, but the previous projections do not need to be recalculated.
+During autoregressive generation, recomputing keys and values for the entire prefix would be wasteful. A **KV cache** stores past $K$ and $V$ tensors. Each new token still attends over the growing history, but the previous projections do not need to be recalculated. Assuming equal key and value head dimensions, a conventional cache stores approximately
+
+$$
+2BLT\,h_{\mathrm{KV}}d_{\mathrm{head}}
+$$
+
+scalar elements for batch size $B$, layers $L$, cached length $T$, and $h_{\mathrm{KV}}$ key/value heads. In ordinary multi-head attention, $h_{\mathrm{KV}}=h$ and $d_{\mathrm{head}}=d/h$, giving $2BLTd$ elements: increasing $h$ at fixed model width does not itself enlarge the cache. Grouped-query attention reduces storage by using fewer key/value heads.
 
 ## 8. From images to sequences: Vision Transformers
 
@@ -258,10 +352,10 @@ $$
 $$
 
 $$
-\text{attention-score memory} = \mathcal{O}(hn^2).
+\text{explicit attention-score or weight storage} = \mathcal{O}(hn^2).
 $$
 
-The quadratic term is why patch size matters. A $224 \times 224$ image with $P=16$ has $n=196$ patch tokens (or $197$ including the class token). Reducing the patch size to $P=8$ makes $n=784$, which is four times as many tokens and roughly sixteen times as many pairwise attention scores. Windowed and hierarchical architectures such as Swin Transformer reduce this cost by limiting attention to local windows and progressively merging tokens.
+The quadratic term is why patch size matters. A $224 \times 224$ image with $P=16$ has $n=196$ patch tokens (or $197$ including the class token). Reducing the patch size to $P=8$ makes $n=784$, which is four times as many tokens and roughly sixteen times as many pairwise attention scores. This concerns attention pairs, not necessarily a sixteenfold increase in end-to-end runtime. Windowed and hierarchical architectures such as Swin Transformer reduce this cost by limiting attention to local windows and progressively merging tokens.
 
 ## 9. Technical interview questions
 
@@ -279,11 +373,11 @@ The quadratic term is why patch size matters. A $224 \times 224$ image with $P=1
 
 ### 4. What is the difference between self-attention, cross-attention, and masked self-attention?
 
-**Answer.** Self-attention forms $Q$, $K$, and $V$ from the same sequence. Cross-attention takes $Q$ from one sequence and $K,V$ from another, as in an encoder–decoder model. Masked self-attention is self-attention with a causal mask so position $i$ cannot access positions greater than $i$.
+**Answer.** Self-attention forms $Q$, $K$, and $V$ from the same sequence. Cross-attention takes $Q$ from one sequence and $K,V$ from another, as in an encoder–decoder model. Masked self-attention restricts which position pairs may interact. Causal self-attention is the special case that blocks future positions; padding and local-window masks are other examples.
 
 ### 5. Does adding more heads always add more parameters?
 
-**Answer.** Usually no. Holding $d_{\text{model}}$ fixed and setting each head width to $d_{\text{model}}/h$ keeps the combined $Q$, $K$, $V$, and output-projection sizes approximately unchanged. More heads change the factorization and may change optimization behavior, but they are not free: attention-score memory still grows linearly with $h$.
+**Answer.** Usually no. Holding $d_{\text{model}}$ fixed and setting each head width to $d_{\text{model}}/h$ keeps the combined $Q$, $K$, $V$, and output-projection sizes approximately unchanged. More heads change the factorization and may change optimization behavior. If attention weights are explicitly materialized, their storage grows linearly with $h$; fused implementations need not retain that complete matrix.
 
 ### 6. Why are residual connections and pre-layer normalization useful?
 
@@ -291,11 +385,11 @@ The quadratic term is why patch size matters. A $224 \times 224$ image with $P=1
 
 ### 7. Why can attention be faster to train than an RNN but expensive for long contexts?
 
-**Answer.** All attention scores for a layer can be computed with parallel matrix multiplications, while an RNN must process token states sequentially. However, dense attention compares every pair of positions, so score computation and memory grow quadratically in context length. Long-context methods reduce this cost by restricting, approximating, or reorganizing attention.
+**Answer.** All attention scores for a layer can be computed with parallel matrix multiplications, while an RNN must process token states sequentially. However, dense attention compares every pair of positions, so its arithmetic grows quadratically in context length. Conventional implementations also have quadratic score/weight storage, although memory-efficient exact kernels can avoid retaining the full matrix. Long-context methods reduce cost by restricting, approximating, or reorganizing attention.
 
 ### 8. What does a KV cache change at inference time?
 
-**Answer.** At step $t$, the new query is computed once and attends to cached keys and values for positions $1$ through $t$. This avoids recomputing old token projections. It reduces repeated work, but cache memory grows linearly with generated length, layer count, head count, and head dimension.
+**Answer.** At step $t$, the new query is computed once and attends to cached keys and values for positions $1$ through $t$. This avoids recomputing old token projections. Cache storage grows linearly with generated length, batch size, layer count, number of KV heads, and head dimension: approximately $2BLT h_{\mathrm{KV}}d_{\mathrm{head}}$ scalar elements. For ordinary multi-head attention at fixed $d_{\text{model}}$, $h_{\mathrm{KV}}d_{\mathrm{head}}=d_{\text{model}}$, so adding query heads alone does not increase this count; grouped-query attention reduces it by sharing KV heads.
 
 ### 9. How does Transformer attention work, and what is its function?
 
@@ -314,34 +408,36 @@ The function of attention is to create a context-dependent representation: the s
 
 ### 10. Why does scaled dot-product attention divide by $\sqrt{d_k}$?
 
-**Answer.** If query and key coordinates have approximately zero mean and unit variance, the unscaled dot product has variance proportional to its dimension:
+**Answer.** Under the idealized assumption that query and key coordinates are mutually independent, zero-mean, and unit-variance, the unscaled dot product has variance proportional to its dimension:
 
 $$
 \operatorname{Var}(q^\top k)
 = \operatorname{Var}\left(\sum_{r=1}^{d_k}q_rk_r\right)
-\approx d_k.
+= d_k.
 $$
 
-As $d_k$ grows, unscaled logits become large. Softmax then assigns nearly all probability to one key, so most probabilities and gradients become very small. Scaling by $\sqrt{d_k}$ keeps logit variance near one:
+As $d_k$ grows, unscaled logit differences can grow. Softmax is unchanged by a shared shift, but large differences can assign nearly all probability to one key, leaving most probabilities and gradients very small. Scaling by $\sqrt{d_k}$ keeps the idealized logit variance at one:
 
 $$
-\operatorname{Var}\left(\frac{q^\top k}{\sqrt{d_k}}\right) \approx 1.
+\operatorname{Var}\left(\frac{q^\top k}{\sqrt{d_k}}\right) = 1.
 $$
 
-This keeps the softmax in a trainable range. It does **not** force attention to be uniform; the learned projections can still make a relevant key dominant when the data support it.
+For learned projections, correlation and changing variance make this an approximation rather than a guarantee. It does **not** force attention to be uniform; the learned projections can still make a relevant key dominant when the data support it.
 
 ### 11. How does ViT turn a CNN-style image into a sequence, and what are the cost trade-offs?
 
 **Answer.** Standard ViT divides an $H \times W \times C$ image into $P \times P$ patches, flattens each patch to a vector in $\mathbb{R}^{P^2C}$, projects it to $\mathbb{R}^{d}$, adds positional information, and feeds the resulting $n=HW/P^2$ tokens into Transformer encoder blocks. A hybrid alternative first applies a CNN and treats each spatial location of its final feature map as a token.
 
-The main trade-off is global context versus quadratic cost. Dense attention costs $\mathcal{O}(n^2d)$ time for score/value mixing and stores $\mathcal{O}(hn^2)$ attention weights during training. Smaller patches retain more visual detail but sharply increase $n$; larger patches are cheaper but can lose fine-grained information. CNNs are usually more efficient at high resolution because local convolution scales roughly linearly in the number of pixels for a fixed kernel.
+The main trade-off is global context versus quadratic cost. Dense attention costs $\mathcal{O}(n^2d)$ arithmetic for score/value mixing; conventional training implementations may explicitly store $\mathcal{O}(hn^2)$ attention weights, while memory-efficient exact kernels can avoid that full storage. Smaller patches retain more visual detail but sharply increase $n$; larger patches are cheaper but can lose fine-grained information. CNNs are usually more efficient at high resolution because local convolution scales roughly linearly in the number of pixels for a fixed kernel.
 
 ### 12. What should you check when an attention implementation gives the wrong result?
 
-**Answer.** First check shapes and transpose order: $QK^\top$ should end in $(n,n)$. Then confirm that softmax runs over the key axis, masking is added before softmax, masked scores use a sufficiently negative value, and batch/head dimensions are broadcast as intended. Finally, test a tiny matrix such as the worked example above; the rows of the unmasked attention matrix must sum to one.
+**Answer.** First check shapes and transpose order: full self-attention has $QK^\top\in\mathbb{R}^{n\times n}$, while cross-attention has shape $n_q\times n_k$ and cached decoding often has a $1\times T$ score row. Then confirm that softmax runs over the key axis, masking is added before softmax, every query has at least one allowed key, and batch/head dimensions broadcast as intended. Finally, test a tiny matrix such as the worked example above. Before attention-weight dropout, each unmasked softmax row must sum to one.
 
 ## Further reading
 
 - Vaswani et al. (2017), [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762)
 - The original Transformer paper’s [annotated architecture diagram](https://arxiv.org/pdf/1706.03762)
 - Dosovitskiy et al. (2021), [*An Image is Worth 16×16 Words: Transformers for Image Recognition at Scale*](https://arxiv.org/abs/2010.11929)
+- Dao et al. (2022), [*FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness*](https://arxiv.org/abs/2205.14135)
+- Ainslie et al. (2023), [*GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints*](https://arxiv.org/abs/2305.13245)
