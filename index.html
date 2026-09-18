@@ -55,6 +55,11 @@
       margin: 1.2rem 0 !important;
     }
 
+    .markdown-section .math-display {
+      max-width: 100%;
+      overflow-x: auto;
+    }
+
     .sidebar {
       border-right: 1px solid #e5eaec;
     }
@@ -79,6 +84,9 @@
 
   <script>
     window.MathJax = {
+      startup: {
+        typeset: false
+      },
       tex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']],
@@ -89,6 +97,39 @@
         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
       }
     };
+
+    function renderDocsifyMath(attempt) {
+      const content = document.querySelector('.markdown-section');
+      const sidebar = document.querySelector('.sidebar');
+
+      if (!content || !window.MathJax || !window.MathJax.typesetPromise) {
+        if (attempt < 100) window.setTimeout(() => renderDocsifyMath(attempt + 1), 50);
+        return;
+      }
+
+      const elements = [content, sidebar].filter(Boolean);
+      window.MathJax.typesetClear(elements);
+      window.MathJax.typesetPromise(elements).catch((error) => console.error('Math rendering failed:', error));
+    }
+
+    function escapeLatexForHtml(latex) {
+      return latex
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function protectDocsifyMath(markdown) {
+      const protectedBlocks = markdown.replace(/\$\$([\s\S]+?)\$\$/g, function (_, latex) {
+        return '<div class="math-display">\\[' + escapeLatexForHtml(latex.trim()) + '\\]</div>';
+      });
+
+      return protectedBlocks.replace(/(^|[^\\])\$((?:\\.|[^$\\\n])+?)\$/g, function (_, prefix, latex) {
+        return prefix + '<span class="math-inline">&#92;(' + escapeLatexForHtml(latex) + '&#92;)</span>';
+      });
+    }
 
     window.$docsify = {
       name: "Yi Cui",
@@ -102,25 +143,27 @@
         noData: 'No matches found.',
         depth: 2,
       },
-      latex: {
-        overflowScroll: true,
-        customOptions: {
-          chtml: {
-            scale: 1.0
-          },
+      plugins: [
+        function (hook) {
+          hook.beforeEach(function (markdown) {
+            return protectDocsifyMath(markdown);
+          });
+
+          hook.doneEach(function () {
+            window.setTimeout(() => renderDocsifyMath(0), 0);
+          });
         }
-      }
+      ]
     };
   </script>
 
+  <!-- MathJax is loaded before Docsify. The custom hook typesets each rendered route. -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
   <!-- Required -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
   <!-- Recommended Plugins -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
   
-  <!-- MathJax parses and displays the LaTeX used in technical posts. -->
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-latex@0"></script>
 </body>
 </html>
