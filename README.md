@@ -18,7 +18,7 @@ My research interests lie at the intersection of **Statistics** and **Economics*
     <ul style="list-style: none; padding-left: 0;">
         <li style="margin-bottom: 10px;">
             <a href="/blog/attention" style="display: block; padding: 15px; border: 1px solid #e1e4e8; border-radius: 6px; text-decoration: none; color: inherit; transition: border-color 0.2s;">
-                <div style="font-weight: 600; font-size: 1.1em; color: var(--theme-color, #42b983);">Attention Is All You Need: Architecture, Math, and Interview Highlights</div>
+                <div style="font-weight: 600; font-size: 1.1em; color: var(--theme-color, #42b983);">Attention Is All You Need</div>
                 <div style="font-size: 0.85em; color: #6a737d; margin-top: 5px;">September 17, 2026</div>
             </a>
         </li>

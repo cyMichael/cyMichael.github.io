@@ -1,4 +1,4 @@
-# Attention Is All You Need: Architecture, Math, and Interview Highlights
+# Attention Is All You Need
 *September 17, 2026 • Reading Time: 8 mins*
 
 The paper [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762) (Vaswani et al., 2017) revolutionized natural language processing by introducing the **Transformer** architecture. Prior to this, sequence modeling relied heavily on Recurrent Neural Networks (RNNs) and Long Short-Term Memory networks (LSTMs). The Transformer discarded recurrence entirely in favor of an architecture solely based on attention mechanisms.
@@ -7,9 +7,9 @@ The paper [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762) (Vaswa
 
 At the core of the Transformer is the Scaled Dot-Product Attention. The input consists of queries ($Q$), keys ($K$), and values ($V$). The attention function maps a query and a set of key-value pairs to an output.
 
-$$
+```tex
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
-$$
+```
 
 Here, $d_k$ is the dimension of the keys. The dot products of the query with all keys are computed, scaled by $\sqrt{d_k}$, and passed through a softmax function to obtain the weights on the values.
 
@@ -21,13 +21,13 @@ Here, $d_k$ is the dimension of the keys. The dot products of the query with all
 
 Instead of performing a single attention function, the authors found it beneficial to linearly project the queries, keys, and values $h$ times with different, learned linear projections.
 
-$$
+```tex
 \text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}_1, \dots, \text{head}_h)W^O
-$$
+```
 
-$$
+```tex
 \text{where } \text{head}_i = \text{Attention}(QW_i^Q, KW_i^K, VW_i^V)
-$$
+```
 
 ### Interview Key Point: What is the advantage of Multi-Head Attention?
 
@@ -37,12 +37,12 @@ $$
 
 Since the Transformer contains no recurrence and no convolution, it has no inherent notion of sequence order. To inject some information about the relative or absolute position of the tokens in the sequence, **Positional Encodings** are added to the input embeddings.
 
-$$
+```tex
 PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)
-$$
-$$
+```
+```tex
 PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)
-$$
+```
 
 ### Interview Key Point: Why use sinusoidal positional encodings?
 
