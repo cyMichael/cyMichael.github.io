@@ -206,7 +206,64 @@ With sequence length $n$ and model width $d$, a self-attention layer has roughly
 
 During autoregressive generation, recomputing keys and values for the entire prefix would be wasteful. A **KV cache** stores past $K$ and $V$ tensors. Each new token still attends over the growing history, but the previous projections do not need to be recalculated.
 
-## 8. Technical interview questions
+## 8. From images to sequences: Vision Transformers
+
+Transformers were adapted to computer vision in the Vision Transformer (ViT). Rather than replacing every CNN operation with attention directly, ViT first turns an image into a sequence of visual tokens.
+
+For an image $I \in \mathbb{R}^{H \times W \times C}$ and a square patch size $P$, split the image into non-overlapping $P \times P$ patches. The number of patches is
+
+$$
+n = \frac{H}{P} \cdot \frac{W}{P},
+$$
+
+and each flattened patch has dimension $P^2C$. With a learned patch-embedding matrix $E \in \mathbb{R}^{(P^2C) \times d}$, the $i$-th visual token is
+
+$$
+z_i = \operatorname{vec}(I_i)E,
+\qquad
+z_i \in \mathbb{R}^{d}.
+$$
+
+ViT prepends a learned classification token $z_{\text{cls}}$ and adds a position embedding $P_{\text{pos}}$:
+
+$$
+Z^{(0)} =
+\begin{bmatrix}
+z_{\text{cls}} \\
+z_1 \\
+\vdots \\
+z_n
+\end{bmatrix}
+ + P_{\text{pos}}
+\in \mathbb{R}^{(n+1) \times d}.
+\tag{5}
+$$
+
+This is the Transformer’s input sequence. After the final encoder layer, a classification head commonly reads the representation associated with $z_{\text{cls}}$.
+
+### Two practical image-to-sequence routes
+
+1. **Patchify the raw image (standard ViT).** The patch embedding above is equivalent to a convolution with kernel size $P$ and stride $P$, followed by flattening spatial locations into tokens.
+2. **Use a CNN as a visual tokenizer (hybrid model).** If a CNN produces a feature map $F \in \mathbb{R}^{H' \times W' \times C'}$, reshape it into $H'W'$ vectors in $\mathbb{R}^{C'}$ and linearly project them to width $d$. Attention then mixes information across the CNN features.
+
+CNNs build in locality and translation equivariance through small shared kernels. Full self-attention has no such local bias: any patch can attend to any other patch in one layer. This global receptive field is useful for long-range image relationships, but it usually makes ViTs more data-hungry unless they use large-scale pretraining, augmentation, or architectural priors.
+
+### Attention cost for images
+
+For $n$ image tokens, $h$ heads, and model width $d$, multi-head attention has:
+
+$$
+\text{projection cost} = \mathcal{O}(nd^2), \qquad
+\text{attention mixing cost} = \mathcal{O}(n^2d),
+$$
+
+$$
+\text{attention-score memory} = \mathcal{O}(hn^2).
+$$
+
+The quadratic term is why patch size matters. A $224 \times 224$ image with $P=16$ has $n=196$ patch tokens (or $197$ including the class token). Reducing the patch size to $P=8$ makes $n=784$, which is four times as many tokens and roughly sixteen times as many pairwise attention scores. Windowed and hierarchical architectures such as Swin Transformer reduce this cost by limiting attention to local windows and progressively merging tokens.
+
+## 9. Technical interview questions
 
 ### 1. What are queries, keys, and values?
 
@@ -240,7 +297,46 @@ During autoregressive generation, recomputing keys and values for the entire pre
 
 **Answer.** At step $t$, the new query is computed once and attends to cached keys and values for positions $1$ through $t$. This avoids recomputing old token projections. It reduces repeated work, but cache memory grows linearly with generated length, layer count, head count, and head dimension.
 
-### 9. What should you check when an attention implementation gives the wrong result?
+### 9. How does Transformer attention work, and what is its function?
+
+**Answer.** Attention is a differentiable content-addressing operation. For every token $i$, the model compares its query $q_i$ against every key $k_j$, normalizes those compatibility scores into weights, and uses them to combine the corresponding values:
+
+$$
+o_i = \sum_{j=1}^{n}
+\underbrace{
+\frac{\exp(q_i^\top k_j/\sqrt{d_k})}
+{\sum_{\ell=1}^{n}\exp(q_i^\top k_\ell/\sqrt{d_k})}
+}_{\text{attention weight } A_{ij}}
+v_j.
+$$
+
+The function of attention is to create a context-dependent representation: the same token can retrieve different information in different sentences, positions, or images. In self-attention, every token can exchange information with the rest of the sequence; in cross-attention, one sequence retrieves information from another. Unlike a fixed convolution kernel, the weights $A_{ij}$ are computed from the current input.
+
+### 10. Why does scaled dot-product attention divide by $\sqrt{d_k}$?
+
+**Answer.** If query and key coordinates have approximately zero mean and unit variance, the unscaled dot product has variance proportional to its dimension:
+
+$$
+\operatorname{Var}(q^\top k)
+= \operatorname{Var}\left(\sum_{r=1}^{d_k}q_rk_r\right)
+\approx d_k.
+$$
+
+As $d_k$ grows, unscaled logits become large. Softmax then assigns nearly all probability to one key, so most probabilities and gradients become very small. Scaling by $\sqrt{d_k}$ keeps logit variance near one:
+
+$$
+\operatorname{Var}\left(\frac{q^\top k}{\sqrt{d_k}}\right) \approx 1.
+$$
+
+This keeps the softmax in a trainable range. It does **not** force attention to be uniform; the learned projections can still make a relevant key dominant when the data support it.
+
+### 11. How does ViT turn a CNN-style image into a sequence, and what are the cost trade-offs?
+
+**Answer.** Standard ViT divides an $H \times W \times C$ image into $P \times P$ patches, flattens each patch to a vector in $\mathbb{R}^{P^2C}$, projects it to $\mathbb{R}^{d}$, adds positional information, and feeds the resulting $n=HW/P^2$ tokens into Transformer encoder blocks. A hybrid alternative first applies a CNN and treats each spatial location of its final feature map as a token.
+
+The main trade-off is global context versus quadratic cost. Dense attention costs $\mathcal{O}(n^2d)$ time for score/value mixing and stores $\mathcal{O}(hn^2)$ attention weights during training. Smaller patches retain more visual detail but sharply increase $n$; larger patches are cheaper but can lose fine-grained information. CNNs are usually more efficient at high resolution because local convolution scales roughly linearly in the number of pixels for a fixed kernel.
+
+### 12. What should you check when an attention implementation gives the wrong result?
 
 **Answer.** First check shapes and transpose order: $QK^\top$ should end in $(n,n)$. Then confirm that softmax runs over the key axis, masking is added before softmax, masked scores use a sufficiently negative value, and batch/head dimensions are broadcast as intended. Finally, test a tiny matrix such as the worked example above; the rows of the unmasked attention matrix must sum to one.
 
@@ -248,3 +344,4 @@ During autoregressive generation, recomputing keys and values for the entire pre
 
 - Vaswani et al. (2017), [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762)
 - The original Transformer paper’s [annotated architecture diagram](https://arxiv.org/pdf/1706.03762)
+- Dosovitskiy et al. (2021), [*An Image is Worth 16×16 Words: Transformers for Image Recognition at Scale*](https://arxiv.org/abs/2010.11929)
