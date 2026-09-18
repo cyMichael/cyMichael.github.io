@@ -72,6 +72,21 @@
       text-transform: uppercase;
     }
 
+    .visitor-map {
+      margin-top: 3.5rem;
+      padding-top: 0.75rem;
+      text-align: center;
+    }
+
+    .visitor-map h2 {
+      text-align: left;
+    }
+
+    .visitor-map-widget {
+      margin: 1.25rem auto 0;
+      max-width: 640px;
+    }
+
     @media screen and (max-width: 768px) {
       .markdown-section {
         padding: 2.2rem 1.4rem 3.5rem;
@@ -131,6 +146,34 @@
       });
     }
 
+    function placeVisitorMap(attempt) {
+      const visitorMap = document.getElementById('visitor-map');
+      const content = document.querySelector('.markdown-section');
+
+      if (!visitorMap || !content) {
+        if (attempt < 100) window.setTimeout(() => placeVisitorMap(attempt + 1), 50);
+        return;
+      }
+
+      const hash = window.location.hash;
+      const isHomeRoute = !hash || hash === '#/' || hash.startsWith('#/?');
+
+      if (isHomeRoute) {
+        visitorMap.hidden = false;
+        content.appendChild(visitorMap);
+      } else {
+        visitorMap.hidden = true;
+        document.body.appendChild(visitorMap);
+      }
+    }
+
+    function preserveVisitorMap() {
+      const visitorMap = document.getElementById('visitor-map');
+      if (visitorMap && visitorMap.parentElement !== document.body) {
+        document.body.appendChild(visitorMap);
+      }
+    }
+
     window.$docsify = {
       name: "Yi Cui",
       repo: '',
@@ -146,11 +189,15 @@
       plugins: [
         function (hook) {
           hook.beforeEach(function (markdown) {
+            preserveVisitorMap();
             return protectDocsifyMath(markdown);
           });
 
           hook.doneEach(function () {
-            window.setTimeout(() => renderDocsifyMath(0), 0);
+            window.setTimeout(() => {
+              renderDocsifyMath(0);
+              placeVisitorMap(0);
+            }, 0);
           });
         }
       ]
@@ -164,6 +211,12 @@
   <!-- Recommended Plugins -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
-  
+
+  <section id="visitor-map" class="visitor-map" hidden aria-label="Visitor map">
+    <h2>Visitor Map</h2>
+    <div class="visitor-map-widget">
+      <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=EwPtc4H4PAsP3Mb4tT-WXPNOsqI2P-hTaLKuIk8YL3o&cl=ffffff&w=a"></script>
+    </div>
+  </section>
 </body>
 </html>
