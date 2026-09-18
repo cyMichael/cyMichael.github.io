@@ -13,6 +13,18 @@ My research interests lie at the intersection of **Statistics** and **Economics*
 - Algorithmic Pricing
 - Recommendation Systems
 
+<div style="margin-top: 40px; margin-bottom: 20px;">
+    <h2>Recent Blog Posts</h2>
+    <ul style="list-style: none; padding-left: 0;">
+        <li style="margin-bottom: 10px;">
+            <a href="/blog/attention" style="display: block; padding: 15px; border: 1px solid #e1e4e8; border-radius: 6px; text-decoration: none; color: inherit; transition: border-color 0.2s;">
+                <div style="font-weight: 600; font-size: 1.1em; color: var(--theme-color, #42b983);">Attention Is All You Need: Architecture, Math, and Interview Highlights</div>
+                <div style="font-size: 0.85em; color: #6a737d; margin-top: 5px;">September 17, 2026</div>
+            </a>
+        </li>
+    </ul>
+</div>
+
 <div style="margin-top: 50px;">
     <h2>Visitor Map</h2>
     <div style="width: 250px; overflow: hidden; margin-bottom: 10px;">
