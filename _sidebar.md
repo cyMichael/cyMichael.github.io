@@ -1,4 +1,4 @@
-- [Home](/)
+- [About](/)
 - [Research](/research)
 - [Contact](/contact)
 
