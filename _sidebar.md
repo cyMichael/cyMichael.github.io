@@ -1,6 +1,3 @@
-- [About](/)
-- [Research](/research)
-- [Contact](/contact)
-
 - **Blog**
+  - [All posts](/)
   - [Attention Is All You Need](/blog/attention)
